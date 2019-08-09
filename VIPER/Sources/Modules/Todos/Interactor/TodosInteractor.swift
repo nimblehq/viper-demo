@@ -12,7 +12,10 @@ final class TodosInteractor {
     weak var output: TodosInteractorOutput!
 }
 
+// MARK: - VIPER
+extension TodosInteractor: Interactor {}
 
+// MARK: - TodosInteractorInput
 extension TodosInteractor: TodosInteractorInput {
     
 }

@@ -14,9 +14,11 @@ final class TodosViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
 }
+
+// MARK: - VIPER
+extension TodosViewController: View {}
 
 // MARK: - Connect to Presenter
 extension TodosViewController: TodosViewInput {

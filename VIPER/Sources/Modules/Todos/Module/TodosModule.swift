@@ -34,3 +34,6 @@ final class TodosModule {
         interactor.output = presenter
     }
 }
+
+// MARK: - VIPER
+extension TodosModule: Module {}
