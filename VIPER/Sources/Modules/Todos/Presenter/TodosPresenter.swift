@@ -19,11 +19,10 @@ extension TodosPresenter: Presenter {}
 
 // MARK: - Connect to View
 extension TodosPresenter: TodosViewOutput {
-    func updateView() {   
+    func add() {
     }
     
-    func addNew() {
-        
+    func fetch() {   
     }
 }
 

@@ -12,6 +12,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TodosViewController" customModule="viper" customModuleProvider="target">
             <connections>
+                <outlet property="emptyView" destination="TYg-dX-h2V" id="nzJ-I0-V4n"/>
+                <outlet property="tableView" destination="UOx-2D-wcs" id="XZ8-mi-fCa"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,8 +21,43 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UOx-2D-wcs">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TYg-dX-h2V">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You're all caught up!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3v-jB-NB2">
+                            <rect key="frame" x="8" y="392.5" width="398" height="33.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="d3v-jB-NB2" secondAttribute="trailing" constant="8" id="WC0-eG-CM7"/>
+                        <constraint firstItem="d3v-jB-NB2" firstAttribute="centerY" secondItem="TYg-dX-h2V" secondAttribute="centerY" id="so0-Jb-CcM"/>
+                        <constraint firstItem="d3v-jB-NB2" firstAttribute="centerX" secondItem="TYg-dX-h2V" secondAttribute="centerX" id="uO1-xJ-tN1"/>
+                        <constraint firstItem="d3v-jB-NB2" firstAttribute="leading" secondItem="TYg-dX-h2V" secondAttribute="leading" constant="8" id="vmr-Mb-dXa"/>
+                    </constraints>
+                </view>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="TYg-dX-h2V" firstAttribute="bottom" secondItem="UOx-2D-wcs" secondAttribute="bottom" id="CG5-WM-AFm"/>
+                <constraint firstItem="TYg-dX-h2V" firstAttribute="trailing" secondItem="UOx-2D-wcs" secondAttribute="trailing" id="TTq-8m-iXT"/>
+                <constraint firstItem="TYg-dX-h2V" firstAttribute="leading" secondItem="UOx-2D-wcs" secondAttribute="leading" id="UYX-Xk-zDD"/>
+                <constraint firstItem="UOx-2D-wcs" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Wzr-6C-HVb"/>
+                <constraint firstItem="UOx-2D-wcs" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ns2-CT-eAn"/>
+                <constraint firstItem="TYg-dX-h2V" firstAttribute="top" secondItem="UOx-2D-wcs" secondAttribute="top" id="rsO-ez-CUq"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="UOx-2D-wcs" secondAttribute="bottom" id="vjA-Zj-EJN"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="UOx-2D-wcs" secondAttribute="trailing" id="yew-id-5oM"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="-3" y="135"/>
         </view>
     </objects>
 </document>

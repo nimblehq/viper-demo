@@ -9,6 +9,6 @@
 import Foundation
 
 protocol TodosViewOutput {
-    func updateView()
-    func addNew()
+    func fetch()
+    func add()
 }

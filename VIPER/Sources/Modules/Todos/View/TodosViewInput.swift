@@ -9,5 +9,6 @@
 import Foundation
 
 protocol TodosViewInput: class {
-    func applyViewItem(_ item: TodosViewItem)
+    func showEmptyMessage()
+    func showData(_ data: Any)
 }

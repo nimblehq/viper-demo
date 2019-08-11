@@ -17,7 +17,6 @@
 		90203EB622FD67D900496617 /* TodosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90203EA822FD67D900496617 /* TodosViewController.swift */; };
 		90203EB722FD67D900496617 /* TodosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90203EA922FD67D900496617 /* TodosViewController.xib */; };
 		90203EB822FD67D900496617 /* TodosViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90203EAA22FD67D900496617 /* TodosViewInput.swift */; };
-		90203EB922FD67D900496617 /* TodosViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90203EAB22FD67D900496617 /* TodosViewItem.swift */; };
 		90203EBA22FD67D900496617 /* TodosViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90203EAC22FD67D900496617 /* TodosViewOutput.swift */; };
 		90203EBB22FD67D900496617 /* TodosInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90203EAE22FD67D900496617 /* TodosInteractorInput.swift */; };
 		90203EBC22FD67D900496617 /* TodosInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90203EAF22FD67D900496617 /* TodosInteractorOutput.swift */; };
@@ -67,7 +66,6 @@
 		90203EA822FD67D900496617 /* TodosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodosViewController.swift; sourceTree = "<group>"; };
 		90203EA922FD67D900496617 /* TodosViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TodosViewController.xib; sourceTree = "<group>"; };
 		90203EAA22FD67D900496617 /* TodosViewInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodosViewInput.swift; sourceTree = "<group>"; };
-		90203EAB22FD67D900496617 /* TodosViewItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodosViewItem.swift; sourceTree = "<group>"; };
 		90203EAC22FD67D900496617 /* TodosViewOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodosViewOutput.swift; sourceTree = "<group>"; };
 		90203EAE22FD67D900496617 /* TodosInteractorInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodosInteractorInput.swift; sourceTree = "<group>"; };
 		90203EAF22FD67D900496617 /* TodosInteractorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodosInteractorOutput.swift; sourceTree = "<group>"; };
@@ -242,7 +240,6 @@
 				90203EA822FD67D900496617 /* TodosViewController.swift */,
 				90203EA922FD67D900496617 /* TodosViewController.xib */,
 				90203EAA22FD67D900496617 /* TodosViewInput.swift */,
-				90203EAB22FD67D900496617 /* TodosViewItem.swift */,
 				90203EAC22FD67D900496617 /* TodosViewOutput.swift */,
 			);
 			path = View;
@@ -412,7 +409,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				90203EB522FD67D900496617 /* TodosPresenter.swift in Sources */,
-				90203EB922FD67D900496617 /* TodosViewItem.swift in Sources */,
 				90203EC622FD6B6C00496617 /* View.swift in Sources */,
 				90203ECA22FD6C5200496617 /* Presenter.swift in Sources */,
 				90203ECC22FD6C5E00496617 /* Router.swift in Sources */,
