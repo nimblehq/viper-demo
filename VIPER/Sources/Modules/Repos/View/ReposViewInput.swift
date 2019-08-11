@@ -10,6 +10,6 @@ import Foundation
 
 protocol ReposViewInput: class {
     func showEmptyMessage()
-    func showData(_ data: Any)
+    func showData(_ data: [String])
 }
 

@@ -8,5 +8,6 @@
 
 import Foundation
 
-protocol ReposInteractorInput {
+protocol ReposInteractorInput: class {
+    func getRepos()
 }

@@ -18,7 +18,8 @@ final class ReposModule {
         view = ReposViewController()
         router = ReposRouter()
         presenter = ReposPresenter()
-        interactor = ReposInteractor()
+        let service = Services.shared.api().repoNetwork()
+        interactor = ReposInteractor(service: service)
         connectComponents()
     }
     

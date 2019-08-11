@@ -1,0 +1,45 @@
+//
+//  RepoNetwork.swift
+//  viper
+//
+//  Created by Su Van Ho on 12/8/19.
+//  Copyright © 2019 Nimble. All rights reserved.
+//
+
+import Foundation
+
+protocol RepoNetworkProtocol {
+    func list(completion: @escaping (Result<[Repo], Error>) -> Void)
+}
+
+final class RepoNetwork {
+    
+    private let router: NetworkRouter<RepoTarget>
+    
+    static let `default`: RepoNetwork = {
+        let router = NetworkRouter<RepoTarget>()
+        return RepoNetwork(router: router)
+    }()
+    
+    init(router: NetworkRouter<RepoTarget>) {
+        self.router = router
+    }
+}
+
+// MARK: - RepoNetworkProtocol
+extension RepoNetwork: RepoNetworkProtocol {
+    func list(completion: @escaping (Result<[Repo], Error>) -> Void) {
+        router.request(.list) { result in
+            switch result {
+            case .success(let data):
+                guard let repos: [Repo] = try? data.map([Repo].self) else {
+                    completion(.failure(NetworkError.json))
+                    return
+                }
+                completion(.success(repos))
+            case .failure(let error):
+                completion(.failure(error))
+            }
+        }
+    }
+}

@@ -17,14 +17,12 @@ final class ReposViewController: UIViewController {
     // MARK: - VIPER
     var output: ReposViewOutput?
     
+    // MARK: - Properties
+    var data: [String] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        output?.fetch()
     }
 }
 
@@ -38,8 +36,11 @@ extension ReposViewController: ReposViewInput {
         emptyView.isHidden = false
     }
     
-    func showData(_ data: Any) {
-        
+    func showData(_ data: [String]) {
+        self.data = data
+        tableView.isHidden = false
+        emptyView.isHidden = true
+        tableView.reloadData()
     }
 }
 
@@ -47,12 +48,42 @@ extension ReposViewController: ReposViewInput {
 extension ReposViewController {
     private func setupUI() {
         setupNavi()
+        setupTableView()
     }
     
     private func setupNavi() {
         navigationItem.title = "viper repos".uppercased()
     }
+    
+    private func setupTableView() {
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "UITableViewCell")
+        tableView.delegate = self
+        tableView.dataSource = self
+    }
 }
 
 // MARK: - Actions
-extension ReposViewController {}
+extension ReposViewController {
+    @IBAction func didTapRefreshButton(_ sender: Any) {
+        output?.fetch()
+    }
+}
+
+// MARK: - UITableViewDataSource
+extension ReposViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return data.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "UITableViewCell") else {
+            return UITableViewCell()
+        }
+        cell.textLabel?.text = data[indexPath.row]
+        cell.accessoryType = .detailButton
+        return cell
+    }
+}
+
+// MARK: - UITableViewDelegate
+extension ReposViewController: UITableViewDelegate {}

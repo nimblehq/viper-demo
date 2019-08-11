@@ -10,5 +10,5 @@ import Foundation
 
 protocol ReposViewOutput: class {
     func fetch()
-    func add()
+    func detail()
 }

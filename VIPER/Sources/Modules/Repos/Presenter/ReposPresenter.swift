@@ -20,11 +20,25 @@ extension ReposPresenter: Presenter {}
 // MARK: - Connect to View
 extension ReposPresenter: ReposViewOutput {
     func fetch() {
+        interactor.getRepos()
     }
     
-    func add() {
+    func detail() {
     }
 }
 
 // MARK: - TodosInteractorOutput
-extension ReposPresenter: ReposInteractorOutput {}
+extension ReposPresenter: ReposInteractorOutput {
+    func didFinish(with repos: [String]) {
+        if repos.count == 0 {
+            view.showEmptyMessage()
+        } else {
+            view.showData(repos.map { "@" + $0 })
+        }
+    }
+    
+    func didFail(with error: Error) {
+        view.showEmptyMessage()
+        router.showError(error)
+    }
+}

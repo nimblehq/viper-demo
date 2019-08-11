@@ -9,4 +9,6 @@
 import Foundation
 
 protocol ReposRouterInput: class {
+    func detail()
+    func showError(_ error: Error)
 }

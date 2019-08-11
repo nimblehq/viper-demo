@@ -39,6 +39,9 @@
                             <rect key="frame" x="150.5" y="403" width="113" height="36"/>
                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                             <state key="normal" title="Refresh Data"/>
+                            <connections>
+                                <action selector="didTapRefreshButton:" destination="-1" eventType="touchUpInside" id="RgA-5W-Scj"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
