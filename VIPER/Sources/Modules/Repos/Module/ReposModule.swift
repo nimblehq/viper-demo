@@ -1,24 +1,24 @@
 //
-//  TodosModule.swift
+//  ReposModule.swift
 //  viper
 //
-//  Created by Su Van Ho on 9/8/19.
+//  Created by Su Van Ho on 11/8/19.
 //  Copyright © 2019 Nimble. All rights reserved.
 //
 
 import Foundation
 
-final class TodosModule {
-    let view: TodosViewController
-    let presenter: TodosPresenter
-    let router: TodosRouter
-    let interactor: TodosInteractor
+final class ReposModule {
+    let view: ReposViewController
+    let presenter: ReposPresenter
+    let router: ReposRouter
+    let interactor: ReposInteractor
     
     init() {
-        view = TodosViewController()
-        router = TodosRouter()
-        presenter = TodosPresenter()
-        interactor = TodosInteractor()
+        view = ReposViewController()
+        router = ReposRouter()
+        presenter = ReposPresenter()
+        interactor = ReposInteractor()
         connectComponents()
     }
     
@@ -36,4 +36,4 @@ final class TodosModule {
 }
 
 // MARK: - VIPER
-extension TodosModule: Module {}
+extension ReposModule: Module {}

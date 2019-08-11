@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = window
         
         let router = RootRouter()
-        router.showTodos(on: window)
+        router.showRepos(on: window)
         return true
     }
 }

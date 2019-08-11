@@ -9,15 +9,15 @@
 import UIKit
 
 final class RootRouter {
-    private let todosModule: TodosModule
+    private let reposModule: ReposModule
     
     init() {
-        todosModule = TodosModule()
+        reposModule = ReposModule()
     }
     
-    func showTodos(on view: UIWindow) {
-        guard let todosView = todosModule.router.view else { return }
-        let controller = UINavigationController(rootViewController: todosView)
+    func showRepos(on view: UIWindow) {
+        guard let reposView = reposModule.router.view else { return }
+        let controller = UINavigationController(rootViewController: reposView)
         view.rootViewController = controller
     }
 }

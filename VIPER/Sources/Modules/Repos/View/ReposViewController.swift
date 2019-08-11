@@ -1,21 +1,21 @@
 //
-//  TodosViewController.swift
+//  ReposViewController.swift
 //  viper
 //
-//  Created by Su Van Ho on 9/8/19.
+//  Created by Su Van Ho on 11/8/19.
 //  Copyright © 2019 Nimble. All rights reserved.
 //
 
 import UIKit
 
-final class TodosViewController: UIViewController {
+final class ReposViewController: UIViewController {
     
     // MARK: - Views
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var emptyView: UIView!
     
     // MARK: - VIPER
-    var output: TodosViewOutput?
+    var output: ReposViewOutput?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,10 +29,10 @@ final class TodosViewController: UIViewController {
 }
 
 // MARK: - VIPER
-extension TodosViewController: View {}
+extension ReposViewController: View {}
 
 // MARK: - Connect to Presenter
-extension TodosViewController: TodosViewInput {
+extension ReposViewController: ReposViewInput {
     func showEmptyMessage() {
         tableView.isHidden = true
         emptyView.isHidden = false
@@ -44,21 +44,15 @@ extension TodosViewController: TodosViewInput {
 }
 
 // MARK: - Setup UI
-extension TodosViewController {
+extension ReposViewController {
     private func setupUI() {
         setupNavi()
     }
     
     private func setupNavi() {
-        navigationItem.title = "viper todo".uppercased()
-        let addItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(didTapAddButton))
-        navigationItem.rightBarButtonItem = addItem
+        navigationItem.title = "viper repos".uppercased()
     }
 }
 
 // MARK: - Actions
-extension TodosViewController {
-    @objc func didTapAddButton(_ sender: Any) {
-        output?.add()
-    }
-}
+extension ReposViewController {}
