@@ -18,11 +18,12 @@ final class ReposViewController: UIViewController {
     var output: ReposViewOutput?
     
     // MARK: - Properties
-    var data: [String] = []
+    private var data: [String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        loadData()
     }
 }
 
@@ -53,6 +54,8 @@ extension ReposViewController {
     
     private func setupNavi() {
         navigationItem.title = "viper repos".uppercased()
+        let refreshItem = UIBarButtonItem(barButtonSystemItem: .refresh, target: self, action: #selector(didTapRefreshButton))
+        navigationItem.rightBarButtonItem = refreshItem
     }
     
     private func setupTableView() {
@@ -64,7 +67,11 @@ extension ReposViewController {
 
 // MARK: - Actions
 extension ReposViewController {
-    @IBAction func didTapRefreshButton(_ sender: Any) {
+    private func loadData() {
+        output?.fetch()
+    }
+    
+    @objc func didTapRefreshButton(_ sender: Any) {
         output?.fetch()
     }
 }
@@ -80,10 +87,15 @@ extension ReposViewController: UITableViewDataSource {
             return UITableViewCell()
         }
         cell.textLabel?.text = data[indexPath.row]
-        cell.accessoryType = .detailButton
+        cell.accessoryType = .disclosureIndicator
         return cell
     }
 }
 
 // MARK: - UITableViewDelegate
-extension ReposViewController: UITableViewDelegate {}
+extension ReposViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let index = indexPath.row
+        output?.detail(at: index)
+    }
+}

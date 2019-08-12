@@ -12,4 +12,8 @@ final class API {
     func repoNetwork() -> RepoNetwork {
         return RepoNetwork.default
     }
+    
+    func imageNetwork() -> ImageNetwork {
+        return ImageNetwork.default
+    }
 }

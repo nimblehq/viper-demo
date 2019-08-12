@@ -9,7 +9,7 @@
 import Foundation
 
 final class ReposInteractor {
-    weak var output: ReposInteractorOutput!
+    weak var output: ReposInteractorOutput?
     private let service: RepoNetworkProtocol
     // Maybe we will need a data manager for that
     private var repos: [Repo] = []
@@ -30,10 +30,16 @@ extension ReposInteractor: ReposInteractorInput {
             switch result {
             case .success(let repos):
                 this.repos = repos
-                this.output.didFinish(with: repos.map { $0.fullName })
+                this.output?.didSuccess(with: repos.map { $0.fullName })
             case .failure(let error):
-                this.output.didFail(with: error)
+                this.output?.didFail(with: error)
             }
         }
+    }
+    
+    func getRepoId(at index: Int) -> Int {
+        guard repos.indices.contains(index) else { fatalError("Out of index") }
+        let repo = repos[index]
+        return repo.id
     }
 }

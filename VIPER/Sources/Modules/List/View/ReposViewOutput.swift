@@ -1,5 +1,5 @@
 //
-//  ReposRouterInput.swift
+//  ReposViewOutput.swift
 //  viper
 //
 //  Created by Su Van Ho on 11/8/19.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol ReposRouterInput: class {
-    func detail()
-    func showError(_ error: Error)
+protocol ReposViewOutput: class {
+    func fetch()
+    func detail(at index: Int)
 }

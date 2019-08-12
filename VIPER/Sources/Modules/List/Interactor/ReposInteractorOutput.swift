@@ -9,6 +9,6 @@
 import Foundation
 
 protocol ReposInteractorOutput: class {
-    func didFinish(with repos: [String])
+    func didSuccess(with repos: [String])
     func didFail(with error: Error)
 }

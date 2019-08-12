@@ -6,7 +6,7 @@
 //  Copyright © 2019 Nimble. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 protocol Router: class {
     associatedtype View

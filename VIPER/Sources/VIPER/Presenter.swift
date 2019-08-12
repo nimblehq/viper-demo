@@ -13,7 +13,7 @@ protocol Presenter: class {
     associatedtype Router
     associatedtype Interactor
     
-    var view: View! { get set }
-    var router: Router! { get set }
-    var interactor: Interactor! { get set }
+    var view: View { get set }
+    var router: Router { get set }
+    var interactor: Interactor { get set }
 }

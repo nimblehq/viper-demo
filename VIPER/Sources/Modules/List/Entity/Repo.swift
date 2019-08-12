@@ -13,7 +13,9 @@ final class Repo {
     let name: String
     let fullName: String
     
-    init(id: Int, name: String, fullName: String) {
+    init(id: Int,
+         name: String,
+         fullName: String) {
         self.id = id
         self.name = name
         self.fullName = fullName

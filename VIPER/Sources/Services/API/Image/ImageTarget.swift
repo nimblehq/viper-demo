@@ -1,5 +1,5 @@
 //
-//  RepoTarget.swift
+//  ImageTarget.swift
 //  viper
 //
 //  Created by Su Van Ho on 12/8/19.
@@ -8,23 +8,20 @@
 
 import Foundation
 
-enum RepoTarget {
-    case list
-    case info(Int)
+enum ImageTarget {
+    case download(String)
 }
 
 // MARK: - TargetType
-extension RepoTarget: TargetType {
+extension ImageTarget: TargetType {
     var baseURL: String {
-        return "https://api.github.com/repositories"
+        return ""
     }
     
     var path: String {
         switch self {
-        case .list:
-            return ""
-        case .info(let id):
-            return "/\(id)"
+        case .download(let path):
+            return path
         }
     }
     

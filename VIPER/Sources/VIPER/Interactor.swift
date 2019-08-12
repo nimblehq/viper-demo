@@ -11,5 +11,5 @@ protocol Interactor {
     associatedtype Presenter
 
     /// This property is used like a delegate, from Interactor, using this property when you need some action that made by Presenter
-    var output: Presenter! { get set }
+    var output: Presenter { get set }
 }

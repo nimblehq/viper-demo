@@ -10,6 +10,7 @@ import UIKit
 
 final class ReposRouter {
     weak var view: ReposViewController?
+    private var detailModule: DetailModule?
 }
 
 // MARK: - VIPER
@@ -17,8 +18,11 @@ extension ReposRouter: Router {}
 
 // MARK: - Interface
 extension ReposRouter: ReposRouterInput {
-    func detail() {
-        // TODOs: Move to Another Module
+    func detail(with id: Int) {
+        let module = DetailModule(repoId: id)
+        guard let detailView = module.router.view else { return }
+        view?.navigationController?.pushViewController(detailView, animated: true)
+        detailModule = module
     }
     
     func showError(_ error: Error) {
