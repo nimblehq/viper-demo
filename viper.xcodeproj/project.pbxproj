@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		900305572301A4B6002A57B6 /* ImageNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900305562301A4B6002A57B6 /* ImageNetwork.swift */; };
 		900305592301A4DB002A57B6 /* ImageTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900305582301A4DB002A57B6 /* ImageTarget.swift */; };
+		9003055E2301C2EE002A57B6 /* ReposViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9003055D2301C2EE002A57B6 /* ReposViewTests.swift */; };
 		90203E6B22FD669100496617 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90203E6A22FD669100496617 /* AppDelegate.swift */; };
 		90203E7522FD669200496617 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90203E7422FD669200496617 /* Assets.xcassets */; };
 		90203E7822FD669200496617 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90203E7622FD669200496617 /* LaunchScreen.storyboard */; };
-		90203E8322FD669200496617 /* viperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90203E8222FD669200496617 /* viperTests.swift */; };
 		90203E8E22FD669200496617 /* viperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90203E8D22FD669200496617 /* viperUITests.swift */; };
 		90203EC122FD683100496617 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90203EC022FD683100496617 /* RootRouter.swift */; };
 		90203EC422FD6B5500496617 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90203EC322FD6B5500496617 /* Entity.swift */; };
@@ -33,7 +33,6 @@
 		90358BA823004BDF00B5871C /* ReposPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90358BA723004BDF00B5871C /* ReposPresenter.swift */; };
 		90358BAA23004C3A00B5871C /* ReposModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90358BA923004C3A00B5871C /* ReposModule.swift */; };
 		90358BAD230082F800B5871C /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90358BAC230082F800B5871C /* Services.swift */; };
-		90358BB12300836900B5871C /* CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90358BB02300836900B5871C /* CoreData.swift */; };
 		90358BB32300839C00B5871C /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90358BB22300839C00B5871C /* API.swift */; };
 		90358BB72300863F00B5871C /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90358BB62300863F00B5871C /* HTTPTask.swift */; };
 		90358BB92300865800B5871C /* Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90358BB82300865800B5871C /* Mapping.swift */; };
@@ -58,6 +57,12 @@
 		90358BE62301226400B5871C /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90358BE52301226400B5871C /* Owner.swift */; };
 		90358BE8230125F900B5871C /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90358BE7230125F900B5871C /* Info.swift */; };
 		90358BEA23012EEB00B5871C /* RepoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90358BE923012EEB00B5871C /* RepoItem.swift */; };
+		905A90C92301C79E00D97547 /* ReposPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905A90C82301C79E00D97547 /* ReposPresenterTests.swift */; };
+		905A90CF2301D32300D97547 /* ListMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905A90CE2301D32300D97547 /* ListMocks.swift */; };
+		905A90D22301D42C00D97547 /* ReposRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905A90D12301D42C00D97547 /* ReposRouterTests.swift */; };
+		905A90D52301DCC900D97547 /* ReposInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905A90D42301DCC900D97547 /* ReposInteractorTests.swift */; };
+		905A90D82301E26500D97547 /* RepoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905A90D72301E26500D97547 /* RepoTests.swift */; };
+		905A90DB2301E33A00D97547 /* ReposModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905A90DA2301E33A00D97547 /* ReposModuleTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,13 +85,14 @@
 /* Begin PBXFileReference section */
 		900305562301A4B6002A57B6 /* ImageNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageNetwork.swift; sourceTree = "<group>"; };
 		900305582301A4DB002A57B6 /* ImageTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTarget.swift; sourceTree = "<group>"; };
+		9003055C2301C2EE002A57B6 /* viperTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "viperTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		9003055D2301C2EE002A57B6 /* ReposViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposViewTests.swift; sourceTree = "<group>"; };
 		90203E6722FD669100496617 /* viper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = viper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90203E6A22FD669100496617 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		90203E7422FD669200496617 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		90203E7722FD669200496617 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		90203E7922FD669200496617 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90203E7E22FD669200496617 /* viperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = viperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		90203E8222FD669200496617 /* viperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viperTests.swift; sourceTree = "<group>"; };
 		90203E8422FD669200496617 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90203E8922FD669200496617 /* viperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = viperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		90203E8D22FD669200496617 /* viperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viperUITests.swift; sourceTree = "<group>"; };
@@ -110,7 +116,6 @@
 		90358BA723004BDF00B5871C /* ReposPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposPresenter.swift; sourceTree = "<group>"; };
 		90358BA923004C3A00B5871C /* ReposModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposModule.swift; sourceTree = "<group>"; };
 		90358BAC230082F800B5871C /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
-		90358BB02300836900B5871C /* CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreData.swift; sourceTree = "<group>"; };
 		90358BB22300839C00B5871C /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		90358BB62300863F00B5871C /* HTTPTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPTask.swift; sourceTree = "<group>"; };
 		90358BB82300865800B5871C /* Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mapping.swift; sourceTree = "<group>"; };
@@ -135,6 +140,12 @@
 		90358BE52301226400B5871C /* Owner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
 		90358BE7230125F900B5871C /* Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
 		90358BE923012EEB00B5871C /* RepoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoItem.swift; sourceTree = "<group>"; };
+		905A90C82301C79E00D97547 /* ReposPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposPresenterTests.swift; sourceTree = "<group>"; };
+		905A90CE2301D32300D97547 /* ListMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListMocks.swift; sourceTree = "<group>"; };
+		905A90D12301D42C00D97547 /* ReposRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposRouterTests.swift; sourceTree = "<group>"; };
+		905A90D42301DCC900D97547 /* ReposInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposInteractorTests.swift; sourceTree = "<group>"; };
+		905A90D72301E26500D97547 /* RepoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoTests.swift; sourceTree = "<group>"; };
+		905A90DA2301E33A00D97547 /* ReposModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposModuleTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +182,36 @@
 			path = Image;
 			sourceTree = "<group>";
 		};
+		9003055A2301C2AC002A57B6 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				9003055B2301C2D8002A57B6 /* List */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		9003055B2301C2D8002A57B6 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				905A90D92301E30400D97547 /* Module */,
+				905A90CA2301C81100D97547 /* View */,
+				905A90CB2301C81800D97547 /* Presenter */,
+				905A90D02301D3E700D97547 /* Router */,
+				905A90D32301DCBA00D97547 /* Interactor */,
+				905A90D62301E23600D97547 /* Entity */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		9003055F2301C319002A57B6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9003055C2301C2EE002A57B6 /* viperTests-Bridging-Header.h */,
+				90203E8422FD669200496617 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		90203E5E22FD669100496617 = {
 			isa = PBXGroup;
 			children = (
@@ -204,8 +245,9 @@
 		90203E8122FD669200496617 /* viperTests */ = {
 			isa = PBXGroup;
 			children = (
-				90203E8222FD669200496617 /* viperTests.swift */,
-				90203E8422FD669200496617 /* Info.plist */,
+				905A90CD2301D2FF00D97547 /* Mock */,
+				9003055A2301C2AC002A57B6 /* Modules */,
+				9003055F2301C319002A57B6 /* Supporting Files */,
 			);
 			path = viperTests;
 			sourceTree = "<group>";
@@ -348,7 +390,6 @@
 		90358BAB2300825200B5871C /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				90358BAF2300835B00B5871C /* CoreData */,
 				90358BAE2300835600B5871C /* API */,
 				90358BAC230082F800B5871C /* Services.swift */,
 			);
@@ -364,14 +405,6 @@
 				90358BB22300839C00B5871C /* API.swift */,
 			);
 			path = API;
-			sourceTree = "<group>";
-		};
-		90358BAF2300835B00B5871C /* CoreData */ = {
-			isa = PBXGroup;
-			children = (
-				90358BB02300836900B5871C /* CoreData.swift */,
-			);
-			path = CoreData;
 			sourceTree = "<group>";
 		};
 		90358BB42300850A00B5871C /* Repo */ = {
@@ -465,6 +498,62 @@
 			path = Module;
 			sourceTree = "<group>";
 		};
+		905A90CA2301C81100D97547 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9003055D2301C2EE002A57B6 /* ReposViewTests.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		905A90CB2301C81800D97547 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				905A90C82301C79E00D97547 /* ReposPresenterTests.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		905A90CD2301D2FF00D97547 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				905A90CE2301D32300D97547 /* ListMocks.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		905A90D02301D3E700D97547 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				905A90D12301D42C00D97547 /* ReposRouterTests.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		905A90D32301DCBA00D97547 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				905A90D42301DCC900D97547 /* ReposInteractorTests.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		905A90D62301E23600D97547 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				905A90D72301E26500D97547 /* RepoTests.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		905A90D92301E30400D97547 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				905A90DA2301E33A00D97547 /* ReposModuleTests.swift */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -536,6 +625,7 @@
 					};
 					90203E7D22FD669200496617 = {
 						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
 						TestTargetID = 90203E6622FD669100496617;
 					};
 					90203E8822FD669200496617 = {
@@ -605,7 +695,6 @@
 				90203ECA22FD6C5200496617 /* Presenter.swift in Sources */,
 				900305592301A4DB002A57B6 /* ImageTarget.swift in Sources */,
 				90358BD62301153100B5871C /* RepoPresenter.swift in Sources */,
-				90358BB12300836900B5871C /* CoreData.swift in Sources */,
 				90358BA223004A0400B5871C /* ReposInteractor.swift in Sources */,
 				90358B9C2300484A00B5871C /* ReposViewOutput.swift in Sources */,
 				90358BC3230088B700B5871C /* RepoTarget.swift in Sources */,
@@ -649,7 +738,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90203E8322FD669200496617 /* viperTests.swift in Sources */,
+				905A90DB2301E33A00D97547 /* ReposModuleTests.swift in Sources */,
+				905A90C92301C79E00D97547 /* ReposPresenterTests.swift in Sources */,
+				905A90D82301E26500D97547 /* RepoTests.swift in Sources */,
+				905A90CF2301D32300D97547 /* ListMocks.swift in Sources */,
+				905A90D22301D42C00D97547 /* ReposRouterTests.swift in Sources */,
+				9003055E2301C2EE002A57B6 /* ReposViewTests.swift in Sources */,
+				905A90D52301DCC900D97547 /* ReposInteractorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -843,8 +938,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = viperTests/Info.plist;
+				INFOPLIST_FILE = "viperTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -852,6 +948,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = co.nimblehq.demo.viperTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "viperTests/Supporting Files/viperTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/viper.app/viper";
@@ -863,8 +961,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = viperTests/Info.plist;
+				INFOPLIST_FILE = "viperTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -872,6 +971,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = co.nimblehq.demo.viperTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "viperTests/Supporting Files/viperTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/viper.app/viper";

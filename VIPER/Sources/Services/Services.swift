@@ -14,9 +14,6 @@ final class Services {
     func api() -> API {
         return API()
     }
-    
-    func coreData() -> CoreData {
-        // For examples
-        return CoreData()
-    }
+
+    // For future, maybe you can return another services, such as CoreData
 }

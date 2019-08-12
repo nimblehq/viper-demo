@@ -10,5 +10,5 @@ import Foundation
 
 protocol ReposInteractorInput: class {
     func getRepos()
-    func getRepoId(at index: Int) -> Int
+    func getRepoId(at index: Int) -> Int?
 }

@@ -26,19 +26,18 @@ extension ReposInteractor: Interactor {}
 extension ReposInteractor: ReposInteractorInput {
     func getRepos() {
         service.list { [weak self] result in
-            guard let this = self else { return }
             switch result {
             case .success(let repos):
-                this.repos = repos
-                this.output?.didSuccess(with: repos.map { $0.fullName })
+                self?.repos = repos
+                self?.output?.didSuccess(with: repos.map { $0.fullName })
             case .failure(let error):
-                this.output?.didFail(with: error)
+                self?.output?.didFail(with: error)
             }
         }
     }
     
-    func getRepoId(at index: Int) -> Int {
-        guard repos.indices.contains(index) else { fatalError("Out of index") }
+    func getRepoId(at index: Int) -> Int? {
+        guard repos.indices.contains(index) else { return nil }
         let repo = repos[index]
         return repo.id
     }

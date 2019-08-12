@@ -54,8 +54,6 @@ extension ReposViewController {
     
     private func setupNavi() {
         navigationItem.title = "viper repos".uppercased()
-        let refreshItem = UIBarButtonItem(barButtonSystemItem: .refresh, target: self, action: #selector(didTapRefreshButton))
-        navigationItem.rightBarButtonItem = refreshItem
     }
     
     private func setupTableView() {
@@ -70,10 +68,6 @@ extension ReposViewController {
     private func loadData() {
         output?.fetch()
     }
-    
-    @objc func didTapRefreshButton(_ sender: Any) {
-        output?.fetch()
-    }
 }
 
 // MARK: - UITableViewDataSource
@@ -84,7 +78,7 @@ extension ReposViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "UITableViewCell") else {
-            return UITableViewCell()
+            fatalError("Cannot file UITableViewCell")
         }
         cell.textLabel?.text = data[indexPath.row]
         cell.accessoryType = .disclosureIndicator

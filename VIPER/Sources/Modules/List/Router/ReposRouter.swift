@@ -28,6 +28,6 @@ extension ReposRouter: ReposRouterInput {
     func showError(_ error: Error) {
         let alert = UIAlertController(title: "viper".uppercased(), message: error.localizedDescription, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default))
-        view?.present(alert, animated: true, completion: nil)
+        view?.present(alert, animated: true)
     }
 }

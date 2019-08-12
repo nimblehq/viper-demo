@@ -24,8 +24,9 @@ extension ReposPresenter: ReposViewOutput {
     }
     
     func detail(at index: Int) {
-        guard let id = interactor?.getRepoId(at: index) else { return }
-        router?.detail(with: id)
+        if let id = interactor?.getRepoId(at: index) {
+            router?.detail(with: id)
+        }
     }
 }
 
