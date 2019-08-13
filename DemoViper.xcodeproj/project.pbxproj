@@ -41,12 +41,16 @@
 		9040C52C2302A6BB00CB18B1 /* ReposInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C5202302A6BB00CB18B1 /* ReposInteractorOutput.swift */; };
 		9040C5352302BACC00CB18B1 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C5342302BACC00CB18B1 /* Repo.swift */; };
 		9040C5372302BF5A00CB18B1 /* ReposViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9040C5362302BF5A00CB18B1 /* ReposViewController.xib */; };
+		9040C53F2302C19F00CB18B1 /* ReposRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C53A2302C19F00CB18B1 /* ReposRouterTests.swift */; };
+		9040C5402302C19F00CB18B1 /* ReposViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C53B2302C19F00CB18B1 /* ReposViewControllerTests.swift */; };
+		9040C5412302C19F00CB18B1 /* ReposModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C53C2302C19F00CB18B1 /* ReposModuleTests.swift */; };
+		9040C5422302C19F00CB18B1 /* ReposInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C53D2302C19F00CB18B1 /* ReposInteractorTests.swift */; };
+		9040C5432302C19F00CB18B1 /* ReposPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C53E2302C19F00CB18B1 /* ReposPresenterTests.swift */; };
 		9E88BC3E22FE9A77009E4386 /* AutoMockable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E88BC3D22FE9A77009E4386 /* AutoMockable.generated.swift */; };
 		9EE85C1A22FE955F000FC3D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE85C1922FE955F000FC3D6 /* AppDelegate.swift */; };
 		9EE85C1C22FE955F000FC3D6 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE85C1B22FE955F000FC3D6 /* RootRouter.swift */; };
 		9EE85C2122FE955F000FC3D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EE85C2022FE955F000FC3D6 /* Assets.xcassets */; };
 		9EE85C2422FE955F000FC3D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EE85C2222FE955F000FC3D6 /* LaunchScreen.storyboard */; };
-		9EE85C2F22FE955F000FC3D6 /* DemoViperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE85C2E22FE955F000FC3D6 /* DemoViperTests.swift */; };
 		9EE85C3A22FE955F000FC3D6 /* DemoViperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE85C3922FE955F000FC3D6 /* DemoViperUITests.swift */; };
 		D4F8E69D6AB9326483BAB646 /* Pods_DemoViper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDDD8782175E32A95A56D8DF /* Pods_DemoViper.framework */; };
 /* End PBXBuildFile section */
@@ -106,6 +110,11 @@
 		9040C5202302A6BB00CB18B1 /* ReposInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposInteractorOutput.swift; sourceTree = "<group>"; };
 		9040C5342302BACC00CB18B1 /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
 		9040C5362302BF5A00CB18B1 /* ReposViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReposViewController.xib; sourceTree = "<group>"; };
+		9040C53A2302C19F00CB18B1 /* ReposRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposRouterTests.swift; sourceTree = "<group>"; };
+		9040C53B2302C19F00CB18B1 /* ReposViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposViewControllerTests.swift; sourceTree = "<group>"; };
+		9040C53C2302C19F00CB18B1 /* ReposModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposModuleTests.swift; sourceTree = "<group>"; };
+		9040C53D2302C19F00CB18B1 /* ReposInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposInteractorTests.swift; sourceTree = "<group>"; };
+		9040C53E2302C19F00CB18B1 /* ReposPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposPresenterTests.swift; sourceTree = "<group>"; };
 		9E88BC3D22FE9A77009E4386 /* AutoMockable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoMockable.generated.swift; sourceTree = "<group>"; };
 		9EE85C1622FE955F000FC3D6 /* DemoViper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoViper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EE85C1922FE955F000FC3D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -114,7 +123,6 @@
 		9EE85C2322FE955F000FC3D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9EE85C2522FE955F000FC3D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9EE85C2A22FE955F000FC3D6 /* DemoViperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoViperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9EE85C2E22FE955F000FC3D6 /* DemoViperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoViperTests.swift; sourceTree = "<group>"; };
 		9EE85C3022FE955F000FC3D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9EE85C3522FE955F000FC3D6 /* DemoViperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoViperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EE85C3922FE955F000FC3D6 /* DemoViperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoViperUITests.swift; sourceTree = "<group>"; };
@@ -412,6 +420,26 @@
 			path = Entity;
 			sourceTree = "<group>";
 		};
+		9040C5382302C17B00CB18B1 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				9040C5392302C18600CB18B1 /* ListRepos */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		9040C5392302C18600CB18B1 /* ListRepos */ = {
+			isa = PBXGroup;
+			children = (
+				9040C53A2302C19F00CB18B1 /* ReposRouterTests.swift */,
+				9040C53B2302C19F00CB18B1 /* ReposViewControllerTests.swift */,
+				9040C53C2302C19F00CB18B1 /* ReposModuleTests.swift */,
+				9040C53D2302C19F00CB18B1 /* ReposInteractorTests.swift */,
+				9040C53E2302C19F00CB18B1 /* ReposPresenterTests.swift */,
+			);
+			path = ListRepos;
+			sourceTree = "<group>";
+		};
 		9E88BC3B22FE9A77009E4386 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -464,8 +492,8 @@
 		9EE85C2D22FE955F000FC3D6 /* DemoViperTests */ = {
 			isa = PBXGroup;
 			children = (
+				9040C5382302C17B00CB18B1 /* Modules */,
 				9E88BC3B22FE9A77009E4386 /* Helpers */,
-				9EE85C2E22FE955F000FC3D6 /* DemoViperTests.swift */,
 				9EE85C3022FE955F000FC3D6 /* Info.plist */,
 			);
 			path = DemoViperTests;
@@ -742,8 +770,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9EE85C2F22FE955F000FC3D6 /* DemoViperTests.swift in Sources */,
+				9040C5402302C19F00CB18B1 /* ReposViewControllerTests.swift in Sources */,
+				9040C53F2302C19F00CB18B1 /* ReposRouterTests.swift in Sources */,
 				9E88BC3E22FE9A77009E4386 /* AutoMockable.generated.swift in Sources */,
+				9040C5412302C19F00CB18B1 /* ReposModuleTests.swift in Sources */,
+				9040C5432302C19F00CB18B1 /* ReposPresenterTests.swift in Sources */,
+				9040C5422302C19F00CB18B1 /* ReposInteractorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

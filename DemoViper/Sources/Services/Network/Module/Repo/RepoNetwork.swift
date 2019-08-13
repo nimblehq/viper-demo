@@ -8,6 +8,7 @@
 
 import Foundation
 
+// sourcery: AutoMockable
 protocol RepoNetworkProtocol {
     func list(completion: @escaping (Result<[Repo], Error>) -> Void)
 //    func info(id: Int, completion: @escaping (Result<Info, Error>) -> Void)
