@@ -11,7 +11,7 @@ import UIKit
 /// These protocols is defined for people who want to take a look on a big picture of VIPER, optional for using.
 ///
 /// Router contains navigation logic for describing which screens are shown in which order
-protocol Router: class {
+protocol Router: AnyObject {
     associatedtype View
 
     /// Router will use this view to change to another view

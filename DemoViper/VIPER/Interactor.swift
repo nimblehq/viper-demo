@@ -11,7 +11,7 @@ import Foundation
 /// These protocols is defined for people who want to take a look on a big picture of VIPER, optional for using.
 ///
 /// Interactor contains the business logic as specified by a UseCase
-protocol Interactor {
+protocol Interactor: AnyObject {
     associatedtype Presenter
 
     /// This property is used like a delegate, from Interactor, using this property when you need some action that made by Presenter

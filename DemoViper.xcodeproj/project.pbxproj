@@ -144,6 +144,7 @@
 		9040C4CB2302838300CB18B1 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				9040C4FA230298C100CB18B1 /* Modules */,
 				9040C4CC2302839200CB18B1 /* AppDelegate */,
 			);
 			path = Sources;
@@ -169,6 +170,13 @@
 				9040C4CE230283D600CB18B1 /* View.swift */,
 			);
 			path = VIPER;
+			sourceTree = "<group>";
+		};
+		9040C4FA230298C100CB18B1 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
 			sourceTree = "<group>";
 		};
 		9E88BC3B22FE9A77009E4386 /* Helpers */ = {
@@ -619,7 +627,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = DemoViper/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DemoViper/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -639,7 +647,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = DemoViper/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DemoViper/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

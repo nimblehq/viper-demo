@@ -11,7 +11,7 @@ import Foundation
 /// These protocols is defined for people who want to take a look on a big picture of VIPER, optional for using.
 ///
 /// Module is used for wrap your module, it contains View, Presenter, Router, Interactor and connect all parts of VIPER together.
-protocol Module {
+protocol Module: AnyObject {
     associatedtype View
     associatedtype Presenter
     associatedtype Router

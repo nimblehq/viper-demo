@@ -11,7 +11,7 @@ import Foundation
 /// These protocols is defined for people who want to take a look on a big picture of VIPER, optional for using.
 ///
 /// Presenter contains View logic for preparing content for display (as received from the Interactor) and for reacting to user inputs (by requesting new data from Interactor)
-protocol Presenter: class {
+protocol Presenter: AnyObject {
     associatedtype View
     associatedtype Router
     associatedtype Interactor
@@ -19,7 +19,7 @@ protocol Presenter: class {
     /// Presenter will connect to view, so when they need view do something, presenter will call this property
     var view: View { get set }
 
-    /// P resenter will use router for routing the app to another module,
+    /// Presenter will use router for routing the app to another module
     var router: Router { get set }
 
     /// Presenter will use interactor to request data

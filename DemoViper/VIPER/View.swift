@@ -11,7 +11,7 @@ import UIKit
 /// These protocols is defined for people who want to take a look on a big picture of VIPER, optional for using.
 ///
 /// View displays what it is told by the Presenter and relays user input back to the Presenter
-protocol View: class {
+protocol View: AnyObject {
     associatedtype Presenter
 
     /// View use presenter for respond or handle the event from user, or some actions that request data
