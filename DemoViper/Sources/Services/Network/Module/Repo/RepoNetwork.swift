@@ -11,7 +11,7 @@ import Foundation
 // sourcery: AutoMockable
 protocol RepoNetworkProtocol {
     func list(completion: @escaping (Result<[Repo], Error>) -> Void)
-//    func info(id: Int, completion: @escaping (Result<Info, Error>) -> Void)
+    func info(id: Int, completion: @escaping (Result<Info, Error>) -> Void)
 }
 
 final class RepoNetwork {
@@ -44,18 +44,18 @@ extension RepoNetwork: RepoNetworkProtocol {
         }
     }
 
-//    func info(id: Int, completion: @escaping (Result<Info, Error>) -> Void) {
-//        router.request(.info(id)) { result in
-//            switch result {
-//            case .success(let data):
-//                guard let info: Info = try? data.map(Info.self) else {
-//                    completion(.failure(NetworkError.json))
-//                    return
-//                }
-//                completion(.success(info))
-//            case .failure(let error):
-//                completion(.failure(error))
-//            }
-//        }
-//    }
+    func info(id: Int, completion: @escaping (Result<Info, Error>) -> Void) {
+        router.request(.info(id)) { result in
+            switch result {
+            case .success(let data):
+                guard let info: Info = try? data.map(Info.self) else {
+                    completion(.failure(NetworkError.json))
+                    return
+                }
+                completion(.success(info))
+            case .failure(let error):
+                completion(.failure(error))
+            }
+        }
+    }
 }

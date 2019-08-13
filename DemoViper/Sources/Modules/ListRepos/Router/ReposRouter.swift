@@ -11,6 +11,7 @@ import UIKit
 final class ReposRouter {
     
     weak var view: ReposViewInput?
+    private var repoModule: RepoModule?
 
     private var viewController: UIViewController? { 
         return view as? UIViewController
@@ -21,7 +22,9 @@ final class ReposRouter {
 
 extension ReposRouter: ReposRouterInput {
     func detail(with id: Int) {
-        // Create a new module
+        let module = RepoModule(repoId: id)
+        viewController?.navigationController?.pushViewController(module.view, animated: true)
+        repoModule = module
     }
 
     func showError(_ error: Error) {

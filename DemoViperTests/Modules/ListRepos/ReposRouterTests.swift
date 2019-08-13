@@ -35,11 +35,8 @@ final class ReposRouterTests: XCTestCase {
     }
 
     func testShowDetail() {
-        // TODOs: Write Test when finish push to another viewController
-        /*
         router.detail(with: 0)
         XCTAssertEqual(self.viewController.navigationController?.pushedViewControllers.count, 2)
-        */
     }
 
     func testShowError() {
