@@ -196,13 +196,6 @@
 			path = VIPER;
 			sourceTree = "<group>";
 		};
-		9040C4FA230298C100CB18B1 /* Modules */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Modules;
-			sourceTree = "<group>";
-		};
 		9040C4DA2302892D00CB18B1 /* Services */ = {
 			isa = PBXGroup;
 			children = (
