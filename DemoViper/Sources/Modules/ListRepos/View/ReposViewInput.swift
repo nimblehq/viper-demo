@@ -10,7 +10,7 @@ import Foundation
 
 // sourcery: AutoMockable
 protocol ReposViewInput: AnyObject {
-
     func configure()
-
+    func showEmptyMessage()
+    func showData(_ data: [String])
 }

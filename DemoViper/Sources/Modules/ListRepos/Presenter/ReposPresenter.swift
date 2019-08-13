@@ -19,23 +19,34 @@ final class ReposPresenter {
 }
 
 // MARK: - ReposViewOutput
-
 extension ReposPresenter: ReposViewOutput {
-
-    func viewDidLoad() { 
+    func viewDidLoad() {
+        interactor?.getRepos()
         view?.configure()
     }
-    
+
+    func detail(at index: Int) {
+        if let id = interactor?.getRepoId(at: index) {
+            router?.detail(with: id)
+        }
+    }
 }
 
 // MARK: - ReposInteractorOutput
-
 extension ReposPresenter: ReposInteractorOutput { 
+    func didSuccess(with repos: [String]) {
+        if repos.count == 0 {
+            view?.showEmptyMessage()
+        } else {
+            view?.showData(repos.map { "@" + $0 })
+        }
+    }
 
+    func didFail(with error: Error) {
+        view?.showEmptyMessage()
+        router?.showError(error)
+    }
 }
 
 // MARK: - ReposInput
-
-extension ReposPresenter: ReposInput { 
-    
-}
+extension ReposPresenter: ReposInput {}

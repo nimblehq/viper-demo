@@ -10,7 +10,6 @@ import Foundation
 
 // sourcery: AutoMockable
 protocol ReposViewOutput: AnyObject {
-
     func viewDidLoad()
-    
+    func detail(at index: Int)
 }

@@ -10,5 +10,6 @@ import UIKit
 
 // sourcery: AutoMockable
 protocol ReposRouterInput: AnyObject {
-
+    func detail(with id: Int)
+    func showError(_ error: Error)
 }

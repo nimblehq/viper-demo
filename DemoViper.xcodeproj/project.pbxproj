@@ -39,9 +39,11 @@
 		9040C52A2302A6BB00CB18B1 /* ReposOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C51E2302A6BB00CB18B1 /* ReposOutput.swift */; };
 		9040C52B2302A6BB00CB18B1 /* ReposViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C51F2302A6BB00CB18B1 /* ReposViewOutput.swift */; };
 		9040C52C2302A6BB00CB18B1 /* ReposInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C5202302A6BB00CB18B1 /* ReposInteractorOutput.swift */; };
+		9040C5352302BACC00CB18B1 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C5342302BACC00CB18B1 /* Repo.swift */; };
+		9040C5372302BF5A00CB18B1 /* ReposViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9040C5362302BF5A00CB18B1 /* ReposViewController.xib */; };
 		9E88BC3E22FE9A77009E4386 /* AutoMockable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E88BC3D22FE9A77009E4386 /* AutoMockable.generated.swift */; };
 		9EE85C1A22FE955F000FC3D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE85C1922FE955F000FC3D6 /* AppDelegate.swift */; };
-		9EE85C1C22FE955F000FC3D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE85C1B22FE955F000FC3D6 /* ViewController.swift */; };
+		9EE85C1C22FE955F000FC3D6 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE85C1B22FE955F000FC3D6 /* RootRouter.swift */; };
 		9EE85C2122FE955F000FC3D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EE85C2022FE955F000FC3D6 /* Assets.xcassets */; };
 		9EE85C2422FE955F000FC3D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EE85C2222FE955F000FC3D6 /* LaunchScreen.storyboard */; };
 		9EE85C2F22FE955F000FC3D6 /* DemoViperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE85C2E22FE955F000FC3D6 /* DemoViperTests.swift */; };
@@ -102,10 +104,12 @@
 		9040C51E2302A6BB00CB18B1 /* ReposOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposOutput.swift; sourceTree = "<group>"; };
 		9040C51F2302A6BB00CB18B1 /* ReposViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposViewOutput.swift; sourceTree = "<group>"; };
 		9040C5202302A6BB00CB18B1 /* ReposInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposInteractorOutput.swift; sourceTree = "<group>"; };
+		9040C5342302BACC00CB18B1 /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
+		9040C5362302BF5A00CB18B1 /* ReposViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReposViewController.xib; sourceTree = "<group>"; };
 		9E88BC3D22FE9A77009E4386 /* AutoMockable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoMockable.generated.swift; sourceTree = "<group>"; };
 		9EE85C1622FE955F000FC3D6 /* DemoViper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoViper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EE85C1922FE955F000FC3D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9EE85C1B22FE955F000FC3D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9EE85C1B22FE955F000FC3D6 /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
 		9EE85C2022FE955F000FC3D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9EE85C2322FE955F000FC3D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9EE85C2522FE955F000FC3D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -203,7 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				9EE85C1922FE955F000FC3D6 /* AppDelegate.swift */,
-				9EE85C1B22FE955F000FC3D6 /* ViewController.swift */,
+				9EE85C1B22FE955F000FC3D6 /* RootRouter.swift */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -351,6 +355,7 @@
 			isa = PBXGroup;
 			children = (
 				9040C5182302A6BB00CB18B1 /* ReposModule.swift */,
+				9040C5332302BAB400CB18B1 /* Entity */,
 				9040C52D2302A6D300CB18B1 /* Interactor */,
 				9040C52F2302AF5700CB18B1 /* Presenter */,
 				9040C5302302AF6400CB18B1 /* Router */,
@@ -392,10 +397,19 @@
 			isa = PBXGroup;
 			children = (
 				9040C5192302A6BB00CB18B1 /* ReposViewController.swift */,
+				9040C5362302BF5A00CB18B1 /* ReposViewController.xib */,
 				9040C51B2302A6BB00CB18B1 /* ReposViewInput.swift */,
 				9040C51F2302A6BB00CB18B1 /* ReposViewOutput.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		9040C5332302BAB400CB18B1 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				9040C5342302BACC00CB18B1 /* Repo.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 		9E88BC3B22FE9A77009E4386 /* Helpers */ = {
@@ -474,6 +488,7 @@
 			buildConfigurationList = 9EE85C3E22FE955F000FC3D6 /* Build configuration list for PBXNativeTarget "DemoViper" */;
 			buildPhases = (
 				DFA1C4B2F4F14ACC2F414031 /* [CP] Check Pods Manifest.lock */,
+				9040C5322302B89300CB18B1 /* Run Sourcery */,
 				9EE85C1222FE955F000FC3D6 /* Sources */,
 				9EE85C1322FE955F000FC3D6 /* Frameworks */,
 				9EE85C1422FE955F000FC3D6 /* Resources */,
@@ -575,6 +590,7 @@
 			files = (
 				9EE85C2422FE955F000FC3D6 /* LaunchScreen.storyboard in Resources */,
 				9EE85C2122FE955F000FC3D6 /* Assets.xcassets in Resources */,
+				9040C5372302BF5A00CB18B1 /* ReposViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -639,6 +655,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		9040C5322302B89300CB18B1 /* Run Sourcery */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Sourcery";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Pods/Sourcery/bin/sourcery\n";
+		};
 		DFA1C4B2F4F14ACC2F414031 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -668,6 +702,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9040C5352302BACC00CB18B1 /* Repo.swift in Sources */,
 				9040C4E92302899A00CB18B1 /* TargetType.swift in Sources */,
 				9040C4F72302976700CB18B1 /* Network.swift in Sources */,
 				9040C5262302A6BB00CB18B1 /* ReposInput.swift in Sources */,
@@ -685,7 +720,7 @@
 				9040C52B2302A6BB00CB18B1 /* ReposViewOutput.swift in Sources */,
 				9040C4E82302899A00CB18B1 /* HTTPMethod.swift in Sources */,
 				9040C4E62302899A00CB18B1 /* HTTPTask.swift in Sources */,
-				9EE85C1C22FE955F000FC3D6 /* ViewController.swift in Sources */,
+				9EE85C1C22FE955F000FC3D6 /* RootRouter.swift in Sources */,
 				9040C5232302A6BB00CB18B1 /* ReposRouterInput.swift in Sources */,
 				9040C4F5230289DC00CB18B1 /* ImageNetwork.swift in Sources */,
 				9040C5282302A6BB00CB18B1 /* ReposInteractor.swift in Sources */,

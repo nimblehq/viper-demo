@@ -10,5 +10,6 @@ import Foundation
 
 // sourcery: AutoMockable
 protocol ReposInteractorOutput: AnyObject {
-
+    func didSuccess(with repos: [String])
+    func didFail(with error: Error)
 }

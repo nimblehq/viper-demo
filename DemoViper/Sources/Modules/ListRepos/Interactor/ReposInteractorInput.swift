@@ -10,5 +10,6 @@ import Foundation
 
 // sourcery: AutoMockable
 protocol ReposInteractorInput: AnyObject {
-
+    func getRepos()
+    func getRepoId(at index: Int) -> Int?
 }
