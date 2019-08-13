@@ -378,6 +378,65 @@
 				9040C53E2302C19F00CB18B1 /* ReposPresenterTests.swift */,
 			);
 			path = ListRepos;
+            sourceTree = "<group>";
+        };
+		9040C4DA2302892D00CB18B1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9040C4DB2302893B00CB18B1 /* Network */,
+				9040C4F8230297B100CB18B1 /* Services.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9040C4DB2302893B00CB18B1 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				9040C4DD2302896300CB18B1 /* Module */,
+				9040C4DC2302894000CB18B1 /* Core */,
+				9040C4F62302976700CB18B1 /* Network.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		9040C4DC2302894000CB18B1 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				9040C4E22302899A00CB18B1 /* HTTPMethod.swift */,
+				9040C4E02302899A00CB18B1 /* HTTPTask.swift */,
+				9040C4E52302899A00CB18B1 /* Mapping.swift */,
+				9040C4E12302899A00CB18B1 /* NetworkError.swift */,
+				9040C4E42302899A00CB18B1 /* NetworkRouter.swift */,
+				9040C4E32302899A00CB18B1 /* TargetType.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		9040C4DD2302896300CB18B1 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				9040C4EF230289DC00CB18B1 /* Image */,
+				9040C4EC230289DC00CB18B1 /* Repo */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		9040C4EC230289DC00CB18B1 /* Repo */ = {
+			isa = PBXGroup;
+			children = (
+				9040C4ED230289DC00CB18B1 /* RepoNetwork.swift */,
+				9040C4EE230289DC00CB18B1 /* RepoTarget.swift */,
+			);
+			path = Repo;
+			sourceTree = "<group>";
+		};
+		9040C4EF230289DC00CB18B1 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				9040C4F0230289DC00CB18B1 /* ImageTarget.swift */,
+				9040C4F1230289DC00CB18B1 /* ImageNetwork.swift */,
+			);
+			path = Image;
 			sourceTree = "<group>";
 		};
 		90739A32230BD3ED006C1F22 /* Spy */ = {

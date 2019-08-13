@@ -43,7 +43,7 @@ extension RepoNetwork: RepoNetworkProtocol {
             }
         }
     }
-    
+
 //    func info(id: Int, completion: @escaping (Result<Info, Error>) -> Void) {
 //        router.request(.info(id)) { result in
 //            switch result {
