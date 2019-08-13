@@ -8,8 +8,6 @@
 
 import Foundation
 
-import Foundation
-
 final class Info {
     let id: Int
     let name: String
