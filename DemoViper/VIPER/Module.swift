@@ -16,8 +16,8 @@ protocol Module: AnyObject {
     associatedtype Presenter
     associatedtype Router
     associatedtype Interactor
-    associatedtype ModuleInput
-    associatedtype ModuleOutput
+    associatedtype Input
+    associatedtype Output
 
     var view: View { get }
     var presenter: Presenter { get }
@@ -25,6 +25,9 @@ protocol Module: AnyObject {
     var interactor: Interactor { get }
 
     // We will use input and output for Submodule
-    var input: ModuleInput { get set }
-    var output: ModuleOutput { get set }
+    /// This input will be implemented by Presenter
+    var input: Input { get set }
+
+    /// This output is the output of Presenter
+    var output: Output { get }
 }

@@ -15,6 +15,7 @@ protocol Presenter: AnyObject {
     associatedtype View
     associatedtype Router
     associatedtype Interactor
+    associatedtype Output
     
     /// Presenter will connect to view, so when they need view do something, presenter will call this property
     var view: View { get set }
@@ -24,4 +25,7 @@ protocol Presenter: AnyObject {
 
     /// Presenter will use interactor to request data
     var interactor: Interactor { get set }
+
+    /// This output will connect to the output of outside module. Use it if this module is a submodule.
+    var output: Output { get set }
 }
