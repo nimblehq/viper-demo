@@ -25,9 +25,9 @@ protocol Module: AnyObject {
     var interactor: Interactor { get }
 
     // We will use input and output for Submodule
-    /// This input will be implemented by Presenter
-    var input: Input { get set }
+    /// This input will be implemented by Presenter, this is what outside can ask module to do something.
+    var input: Input { get }
 
-    /// This output is the output of Presenter
-    var output: Output { get }
+    /// This output is the output of Presenter, this is kind of module's delegate.
+    var output: Output { get set }
 }
