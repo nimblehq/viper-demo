@@ -45,7 +45,7 @@ After creating a VIPER module, for easy to working with VIPER, I suggest using t
 
 More detail about the code, you can see more in the project `DemoViper`
 
-## Reference: 
+## Reference
 
 - [Architecting iOS Apps with VIPER](https://www.objc.io/issues/13-architecture/viper/)
 
