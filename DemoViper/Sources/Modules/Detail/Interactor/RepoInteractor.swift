@@ -15,10 +15,9 @@ final class RepoInteractor {
     private let imageService: ImageNetworkProtocol
 
     private var info: Info?
-    private var repoId: Int
+    private var repoId: Int!
 
-    init(repoId: Int, repoService: RepoNetworkProtocol, imageService: ImageNetworkProtocol) {
-        self.repoId = repoId
+    init(repoService: RepoNetworkProtocol, imageService: ImageNetworkProtocol) {
         self.repoService = repoService
         self.imageService = imageService
     }
@@ -27,6 +26,11 @@ final class RepoInteractor {
 
 // MARK: - RepoInteractorInput
 extension RepoInteractor: RepoInteractorInput {
+
+    func updateRepoId(_ id: Int) {
+        repoId = id
+    }
+
     func getInfo() {
         repoService.info(id: repoId) { [weak self] result in
             switch result {

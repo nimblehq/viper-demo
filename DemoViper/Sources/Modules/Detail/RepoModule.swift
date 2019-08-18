@@ -24,16 +24,17 @@ final class RepoModule {
         return presenter
     }
 
-    init(repoId: Int) {
+    init() {
         self.view = RepoViewController()
         self.presenter = RepoPresenter()
         self.router = RepoRouter()
         let repoService = Services.shared.network().repoNetwork()
         let imageService = Services.shared.network().imageNetwork()
 
-        self.interactor = RepoInteractor(repoId: repoId,
-                                    repoService: repoService,
-                                    imageService: imageService)
+        self.interactor = RepoInteractor(
+            repoService: repoService,
+            imageService: imageService
+        )
 
         view.output = presenter
         

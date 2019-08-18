@@ -48,4 +48,8 @@ extension RepoPresenter: RepoInteractorOutput {
 }
 
 // MARK: - RepoInput
-extension RepoPresenter: RepoInput {}
+extension RepoPresenter: RepoInput {
+    func apply(repoId: Int) {
+        interactor?.updateRepoId(repoId)
+    }
+}

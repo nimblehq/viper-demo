@@ -10,6 +10,7 @@ import Foundation
 
 // sourcery: AutoMockable
 protocol RepoInteractorInput: AnyObject {
+    func updateRepoId(_ id: Int)
     func getInfo()
     func authorPath() -> String
 }

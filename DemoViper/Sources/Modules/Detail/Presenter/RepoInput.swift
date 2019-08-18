@@ -9,4 +9,6 @@
 import Foundation
 
 // sourcery: AutoMockable
-protocol RepoInput: AnyObject {}
+protocol RepoInput: AnyObject {
+    func apply(repoId: Int)
+}

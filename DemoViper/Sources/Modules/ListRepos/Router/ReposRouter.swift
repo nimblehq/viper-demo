@@ -22,7 +22,8 @@ final class ReposRouter {
 
 extension ReposRouter: ReposRouterInput {
     func detail(with id: Int) {
-        let module = RepoModule(repoId: id)
+        let module = RepoModule()
+        module.input?.apply(repoId: id)
         viewController?.navigationController?.pushViewController(module.view, animated: true)
         repoModule = module
     }
