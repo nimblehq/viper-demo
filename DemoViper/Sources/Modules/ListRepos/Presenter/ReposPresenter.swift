@@ -35,7 +35,7 @@ extension ReposPresenter: ReposViewOutput {
 // MARK: - ReposInteractorOutput
 extension ReposPresenter: ReposInteractorOutput { 
     func didSuccess(with repos: [String]) {
-        if repos.count == 0 {
+        if repos.isEmpty {
             view?.showEmptyMessage()
         } else {
             view?.showData(repos.map { "@" + $0 })

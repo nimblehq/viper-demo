@@ -3,6 +3,7 @@ platform :ios, '12.4'
 target 'DemoViper' do
 
   use_frameworks!
+  pod 'SnapKit'
 
   def testing_pods
     pod 'Sourcery'

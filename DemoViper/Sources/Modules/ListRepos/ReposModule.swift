@@ -28,7 +28,7 @@ final class ReposModule {
         self.view = ReposViewController()
         self.presenter = ReposPresenter()
         self.router = ReposRouter()
-        let service = Services.shared.network().repoNetwork()
+        let service = Services.shared.network.repository
         self.interactor = ReposInteractor(service: service)
 
         view.output = presenter

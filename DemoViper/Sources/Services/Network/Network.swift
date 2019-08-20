@@ -9,11 +9,8 @@
 import Foundation
 
 final class Network {
-    func repoNetwork() -> RepoNetwork {
-        return RepoNetwork.default
-    }
 
-    func imageNetwork() -> ImageNetwork {
-        return ImageNetwork.default
-    }
+    var repository: RepoNetwork { return .default }
+
+    var image: ImageNetwork { return .default }
 }

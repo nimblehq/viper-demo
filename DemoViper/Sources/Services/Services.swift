@@ -11,7 +11,5 @@ import Foundation
 final class Services {
     static let shared: Services = Services()
 
-    func network() -> Network {
-        return Network()
-    }
+    let network: Network = Network()
 }

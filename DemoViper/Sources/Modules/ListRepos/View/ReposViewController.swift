@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import SnapKit
 
 final class ReposViewController: UIViewController {
 
     // MARK: - Views
-    @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var emptyView: UIView!
+    let tableView = UITableView()
+    let emptyView = UIView()
+    let emptyLabel = UILabel()
     
     // MARK: - VIPER
     var output: ReposViewOutput?
@@ -48,8 +50,24 @@ extension ReposViewController: ReposViewInput {
 // MARK: - Setup UI
 extension ReposViewController {
     private func setupUI() {
+        setupLayouts()
+        setupViews()
+    }
+
+    private func setupLayouts() {
+        view.addSubview(tableView)
+        view.addSubview(emptyView)
+        emptyView.addSubview(emptyLabel)
+
+        tableView.snp.makeConstraints { $0.edges.equalToSuperview() }
+        emptyView.snp.makeConstraints { $0.edges.equalToSuperview() }
+        emptyLabel.snp.makeConstraints { $0.center.equalToSuperview() }
+    }
+
+    private func setupViews() {
         setupNavi()
         setupTableView()
+        setupEmptyView()
     }
 
     private func setupNavi() {
@@ -57,9 +75,15 @@ extension ReposViewController {
     }
 
     private func setupTableView() {
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "UITableViewCell")
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: String(describing: UITableViewCell.self))
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.isHidden = true
+    }
+
+    private func setupEmptyView() {
+        emptyLabel.text = "Your data is empy now!!!"
+        emptyView.isHidden = false
     }
 }
 
@@ -70,7 +94,7 @@ extension ReposViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "UITableViewCell") else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: UITableViewCell.self)) else {
             fatalError("Cannot file UITableViewCell")
         }
         cell.textLabel?.text = data[indexPath.row]

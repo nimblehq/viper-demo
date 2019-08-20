@@ -12,7 +12,7 @@ import UIKit
 final class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    var router: RootRouter?
+    var reposInput: ReposInput?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         let window = UIWindow(frame: UIScreen.main.bounds)
@@ -20,7 +20,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = window
 
         let router = RootRouter()
-        router.showRepos(on: window)
+        reposInput = router.showRepos(on: window)
         return true
     }
 }

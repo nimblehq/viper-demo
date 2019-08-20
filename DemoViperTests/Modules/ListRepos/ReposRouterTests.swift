@@ -20,8 +20,8 @@ final class ReposRouterTests: XCTestCase {
 
         viewController = ReposViewController()
         viewController.output = ReposViewOutputMock()
-        let navi = UINavigationController(rootViewController: viewController)
-        UIApplication.shared.keyWindow?.rootViewController = navi
+        let navigationController = SpyNavigationController(rootViewController: viewController)
+        UIApplication.shared.keyWindow?.rootViewController = navigationController
 
         router = ReposRouter()
         router.view = viewController
@@ -37,14 +37,9 @@ final class ReposRouterTests: XCTestCase {
     func testShowDetail() {
         // TODOs: Write Test when finish push to another viewController
         /*
-        let expectation = XCTestExpectation(description: "Wait for animation of push controller")
         router.detail(with: 0)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            XCTAssertEqual(self.viewController.navigationController?.viewControllers.count, 2)
-            expectation.fulfill()
-        }
-        wait(for: [expectation], timeout: 5.0)
-         */
+        XCTAssertEqual(self.viewController.navigationController?.pushedViewControllers.count, 2)
+        */
     }
 
     func testShowError() {

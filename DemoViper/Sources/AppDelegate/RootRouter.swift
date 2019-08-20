@@ -15,8 +15,9 @@ final class RootRouter {
         reposModule = ReposModule()
     }
 
-    func showRepos(on view: UIWindow) {
+    func showRepos(on view: UIWindow) -> ReposInput? {
         let controller = UINavigationController(rootViewController: reposModule.view)
         view.rootViewController = controller
+        return reposModule.input
     }
 }
