@@ -84,6 +84,7 @@ extension ReposViewController {
     private func setupEmptyView() {
         emptyLabel.text = "Your data is empy now!!!"
         emptyView.isHidden = false
+        emptyView.backgroundColor = .white
     }
 }
 
