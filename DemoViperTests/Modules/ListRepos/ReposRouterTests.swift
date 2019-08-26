@@ -36,7 +36,8 @@ final class ReposRouterTests: XCTestCase {
 
     func testShowDetail() {
         router.detail(with: 0)
-        XCTAssertEqual(self.viewController.navigationController?.pushedViewControllers.count, 2)
+        let navigationController = viewController.navigationController as? SpyNavigationController
+        XCTAssertEqual(navigationController?.pushedViewControllers.count, 2)
     }
 
     func testShowError() {
