@@ -28,8 +28,8 @@ final class RepoModule {
         self.view = RepoViewController()
         self.presenter = RepoPresenter()
         self.router = RepoRouter()
-        let repoService = Services.shared.network().repoNetwork()
-        let imageService = Services.shared.network().imageNetwork()
+        let repoService = Services.shared.network.repository
+        let imageService = Services.shared.network.image
 
         self.interactor = RepoInteractor(
             repoService: repoService,
