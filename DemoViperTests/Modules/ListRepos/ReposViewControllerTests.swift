@@ -39,12 +39,4 @@ final class ReposViewControllerTests: XCTestCase {
         XCTAssertTrue(viewController.tableView.isHidden)
         XCTAssertFalse(viewController.emptyView.isHidden)
     }
-
-    func testShowingData() {
-        let data: [String] = ["testRepo", "testRepo1"]
-        viewController.showData(data)
-        XCTAssertFalse(viewController.tableView.isHidden)
-        XCTAssertTrue(viewController.emptyView.isHidden)
-        XCTAssertEqual(viewController.tableView(viewController.tableView, numberOfRowsInSection: 0), data.count)
-    }
 }

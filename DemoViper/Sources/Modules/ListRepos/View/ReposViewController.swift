@@ -65,12 +65,12 @@ extension ReposViewController {
     }
 
     private func setupViews() {
-        setupNavi()
+        setupNavigationBar()
         setupTableView()
         setupEmptyView()
     }
 
-    private func setupNavi() {
+    private func setupNavigationBar() {
         navigationItem.title = "viper repos".uppercased()
     }
 

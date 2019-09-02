@@ -17,20 +17,17 @@ final class NetworkRouter<Target: TargetType>: NetworkRoutable {
     func request(_ target: Target, completion: @escaping (Result<Data, Error>) -> Void) {
         let path = target.baseURL + target.path
         guard let url = URL(string: path) else {
-            completion(.failure(NetworkError.url))
-            return
+            return completion(.failure(NetworkError.url))
         }
         switch target.task {
         case .request:
             URLSession.shared.dataTask(with: url) { (data, response, error) in
                 DispatchQueue.main.async(execute: {
                     if let error = error {
-                        completion(.failure(error))
-                        return
+                        return completion(.failure(error))
                     }
                     guard response != nil, let data = data else {
-                        completion(.failure(NetworkError.empty))
-                        return
+                        return completion(.failure(NetworkError.empty))
                     }
                     completion(.success(data))
                 })

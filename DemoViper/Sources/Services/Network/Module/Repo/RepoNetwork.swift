@@ -35,8 +35,7 @@ extension RepoNetwork: RepoNetworkProtocol {
             switch result {
             case .success(let data):
                 guard let repos: [Repo] = try? data.map([Repo].self) else {
-                    completion(.failure(NetworkError.json))
-                    return
+                    return completion(.failure(NetworkError.json))
                 }
                 completion(.success(repos))
             case .failure(let error):
