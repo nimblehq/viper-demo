@@ -33,10 +33,4 @@ final class ReposViewControllerTests: XCTestCase {
         viewController.viewDidLoad()
         XCTAssertTrue(output.viewDidLoadCalled)
     }
-
-    func testShowingEmptyMessage() {
-        viewController.showEmptyMessage()
-        XCTAssertTrue(viewController.tableView.isHidden)
-        XCTAssertFalse(viewController.emptyView.isHidden)
-    }
 }
