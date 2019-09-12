@@ -15,12 +15,42 @@
 		9040C4D7230283D600CB18B1 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C4D1230283D600CB18B1 /* Interactor.swift */; };
 		9040C4D8230283D600CB18B1 /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C4D2230283D600CB18B1 /* Module.swift */; };
 		9040C4D9230283D600CB18B1 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C4D3230283D600CB18B1 /* Presenter.swift */; };
+		9040C4E62302899A00CB18B1 /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C4E02302899A00CB18B1 /* HTTPTask.swift */; };
+		9040C4E72302899A00CB18B1 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C4E12302899A00CB18B1 /* NetworkError.swift */; };
+		9040C4E82302899A00CB18B1 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C4E22302899A00CB18B1 /* HTTPMethod.swift */; };
+		9040C4E92302899A00CB18B1 /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C4E32302899A00CB18B1 /* TargetType.swift */; };
+		9040C4EA2302899A00CB18B1 /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C4E42302899A00CB18B1 /* NetworkRouter.swift */; };
+		9040C4EB2302899A00CB18B1 /* Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C4E52302899A00CB18B1 /* Mapping.swift */; };
+		9040C4F2230289DC00CB18B1 /* RepoNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C4ED230289DC00CB18B1 /* RepoNetwork.swift */; };
+		9040C4F3230289DC00CB18B1 /* RepoTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C4EE230289DC00CB18B1 /* RepoTarget.swift */; };
+		9040C4F4230289DC00CB18B1 /* ImageTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C4F0230289DC00CB18B1 /* ImageTarget.swift */; };
+		9040C4F5230289DC00CB18B1 /* ImageNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C4F1230289DC00CB18B1 /* ImageNetwork.swift */; };
+		9040C4F72302976700CB18B1 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C4F62302976700CB18B1 /* Network.swift */; };
+		9040C4F9230297B100CB18B1 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C4F8230297B100CB18B1 /* Services.swift */; };
+		9040C5212302A6BB00CB18B1 /* ReposRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C5152302A6BB00CB18B1 /* ReposRouter.swift */; };
+		9040C5222302A6BB00CB18B1 /* ReposInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C5162302A6BB00CB18B1 /* ReposInteractorInput.swift */; };
+		9040C5232302A6BB00CB18B1 /* ReposRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C5172302A6BB00CB18B1 /* ReposRouterInput.swift */; };
+		9040C5242302A6BB00CB18B1 /* ReposModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C5182302A6BB00CB18B1 /* ReposModule.swift */; };
+		9040C5252302A6BB00CB18B1 /* ReposViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C5192302A6BB00CB18B1 /* ReposViewController.swift */; };
+		9040C5262302A6BB00CB18B1 /* ReposInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C51A2302A6BB00CB18B1 /* ReposInput.swift */; };
+		9040C5272302A6BB00CB18B1 /* ReposViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C51B2302A6BB00CB18B1 /* ReposViewInput.swift */; };
+		9040C5282302A6BB00CB18B1 /* ReposInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C51C2302A6BB00CB18B1 /* ReposInteractor.swift */; };
+		9040C5292302A6BB00CB18B1 /* ReposPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C51D2302A6BB00CB18B1 /* ReposPresenter.swift */; };
+		9040C52A2302A6BB00CB18B1 /* ReposOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C51E2302A6BB00CB18B1 /* ReposOutput.swift */; };
+		9040C52B2302A6BB00CB18B1 /* ReposViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C51F2302A6BB00CB18B1 /* ReposViewOutput.swift */; };
+		9040C52C2302A6BB00CB18B1 /* ReposInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C5202302A6BB00CB18B1 /* ReposInteractorOutput.swift */; };
+		9040C5352302BACC00CB18B1 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C5342302BACC00CB18B1 /* Repo.swift */; };
+		9040C53F2302C19F00CB18B1 /* ReposRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C53A2302C19F00CB18B1 /* ReposRouterTests.swift */; };
+		9040C5402302C19F00CB18B1 /* ReposViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C53B2302C19F00CB18B1 /* ReposViewControllerTests.swift */; };
+		9040C5412302C19F00CB18B1 /* ReposModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C53C2302C19F00CB18B1 /* ReposModuleTests.swift */; };
+		9040C5422302C19F00CB18B1 /* ReposInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C53D2302C19F00CB18B1 /* ReposInteractorTests.swift */; };
+		9040C5432302C19F00CB18B1 /* ReposPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C53E2302C19F00CB18B1 /* ReposPresenterTests.swift */; };
+		90739A34230BD3FE006C1F22 /* SpyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90739A33230BD3FE006C1F22 /* SpyNavigationController.swift */; };
 		9E88BC3E22FE9A77009E4386 /* AutoMockable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E88BC3D22FE9A77009E4386 /* AutoMockable.generated.swift */; };
 		9EE85C1A22FE955F000FC3D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE85C1922FE955F000FC3D6 /* AppDelegate.swift */; };
-		9EE85C1C22FE955F000FC3D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE85C1B22FE955F000FC3D6 /* ViewController.swift */; };
+		9EE85C1C22FE955F000FC3D6 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE85C1B22FE955F000FC3D6 /* RootRouter.swift */; };
 		9EE85C2122FE955F000FC3D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EE85C2022FE955F000FC3D6 /* Assets.xcassets */; };
 		9EE85C2422FE955F000FC3D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EE85C2222FE955F000FC3D6 /* LaunchScreen.storyboard */; };
-		9EE85C2F22FE955F000FC3D6 /* DemoViperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE85C2E22FE955F000FC3D6 /* DemoViperTests.swift */; };
 		9EE85C3A22FE955F000FC3D6 /* DemoViperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE85C3922FE955F000FC3D6 /* DemoViperUITests.swift */; };
 		D4F8E69D6AB9326483BAB646 /* Pods_DemoViper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDDD8782175E32A95A56D8DF /* Pods_DemoViper.framework */; };
 /* End PBXBuildFile section */
@@ -54,15 +84,45 @@
 		9040C4D1230283D600CB18B1 /* Interactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
 		9040C4D2230283D600CB18B1 /* Module.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
 		9040C4D3230283D600CB18B1 /* Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		9040C4E02302899A00CB18B1 /* HTTPTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPTask.swift; sourceTree = "<group>"; };
+		9040C4E12302899A00CB18B1 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		9040C4E22302899A00CB18B1 /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		9040C4E32302899A00CB18B1 /* TargetType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetType.swift; sourceTree = "<group>"; };
+		9040C4E42302899A00CB18B1 /* NetworkRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
+		9040C4E52302899A00CB18B1 /* Mapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mapping.swift; sourceTree = "<group>"; };
+		9040C4ED230289DC00CB18B1 /* RepoNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoNetwork.swift; sourceTree = "<group>"; };
+		9040C4EE230289DC00CB18B1 /* RepoTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoTarget.swift; sourceTree = "<group>"; };
+		9040C4F0230289DC00CB18B1 /* ImageTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTarget.swift; sourceTree = "<group>"; };
+		9040C4F1230289DC00CB18B1 /* ImageNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageNetwork.swift; sourceTree = "<group>"; };
+		9040C4F62302976700CB18B1 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		9040C4F8230297B100CB18B1 /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		9040C5152302A6BB00CB18B1 /* ReposRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposRouter.swift; sourceTree = "<group>"; };
+		9040C5162302A6BB00CB18B1 /* ReposInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposInteractorInput.swift; sourceTree = "<group>"; };
+		9040C5172302A6BB00CB18B1 /* ReposRouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposRouterInput.swift; sourceTree = "<group>"; };
+		9040C5182302A6BB00CB18B1 /* ReposModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposModule.swift; sourceTree = "<group>"; };
+		9040C5192302A6BB00CB18B1 /* ReposViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposViewController.swift; sourceTree = "<group>"; };
+		9040C51A2302A6BB00CB18B1 /* ReposInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposInput.swift; sourceTree = "<group>"; };
+		9040C51B2302A6BB00CB18B1 /* ReposViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposViewInput.swift; sourceTree = "<group>"; };
+		9040C51C2302A6BB00CB18B1 /* ReposInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposInteractor.swift; sourceTree = "<group>"; };
+		9040C51D2302A6BB00CB18B1 /* ReposPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposPresenter.swift; sourceTree = "<group>"; };
+		9040C51E2302A6BB00CB18B1 /* ReposOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposOutput.swift; sourceTree = "<group>"; };
+		9040C51F2302A6BB00CB18B1 /* ReposViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposViewOutput.swift; sourceTree = "<group>"; };
+		9040C5202302A6BB00CB18B1 /* ReposInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposInteractorOutput.swift; sourceTree = "<group>"; };
+		9040C5342302BACC00CB18B1 /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
+		9040C53A2302C19F00CB18B1 /* ReposRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposRouterTests.swift; sourceTree = "<group>"; };
+		9040C53B2302C19F00CB18B1 /* ReposViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposViewControllerTests.swift; sourceTree = "<group>"; };
+		9040C53C2302C19F00CB18B1 /* ReposModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposModuleTests.swift; sourceTree = "<group>"; };
+		9040C53D2302C19F00CB18B1 /* ReposInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposInteractorTests.swift; sourceTree = "<group>"; };
+		9040C53E2302C19F00CB18B1 /* ReposPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposPresenterTests.swift; sourceTree = "<group>"; };
+		90739A33230BD3FE006C1F22 /* SpyNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyNavigationController.swift; sourceTree = "<group>"; };
 		9E88BC3D22FE9A77009E4386 /* AutoMockable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoMockable.generated.swift; sourceTree = "<group>"; };
 		9EE85C1622FE955F000FC3D6 /* DemoViper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoViper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EE85C1922FE955F000FC3D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9EE85C1B22FE955F000FC3D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9EE85C1B22FE955F000FC3D6 /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
 		9EE85C2022FE955F000FC3D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9EE85C2322FE955F000FC3D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9EE85C2522FE955F000FC3D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9EE85C2A22FE955F000FC3D6 /* DemoViperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoViperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9EE85C2E22FE955F000FC3D6 /* DemoViperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoViperTests.swift; sourceTree = "<group>"; };
 		9EE85C3022FE955F000FC3D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9EE85C3522FE955F000FC3D6 /* DemoViperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoViperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EE85C3922FE955F000FC3D6 /* DemoViperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoViperUITests.swift; sourceTree = "<group>"; };
@@ -145,6 +205,8 @@
 			isa = PBXGroup;
 			children = (
 				9040C4CC2302839200CB18B1 /* AppDelegate */,
+				9040C5132302A64600CB18B1 /* Modules */,
+				9040C4DA2302892D00CB18B1 /* Services */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -153,7 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				9EE85C1922FE955F000FC3D6 /* AppDelegate.swift */,
-				9EE85C1B22FE955F000FC3D6 /* ViewController.swift */,
+				9EE85C1B22FE955F000FC3D6 /* RootRouter.swift */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -171,9 +233,165 @@
 			path = VIPER;
 			sourceTree = "<group>";
 		};
+		9040C4DA2302892D00CB18B1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9040C4DB2302893B00CB18B1 /* Network */,
+				9040C4F8230297B100CB18B1 /* Services.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9040C4DB2302893B00CB18B1 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				9040C4DD2302896300CB18B1 /* Module */,
+				9040C4DC2302894000CB18B1 /* Core */,
+				9040C4F62302976700CB18B1 /* Network.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		9040C4DC2302894000CB18B1 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				9040C4E22302899A00CB18B1 /* HTTPMethod.swift */,
+				9040C4E02302899A00CB18B1 /* HTTPTask.swift */,
+				9040C4E52302899A00CB18B1 /* Mapping.swift */,
+				9040C4E12302899A00CB18B1 /* NetworkError.swift */,
+				9040C4E42302899A00CB18B1 /* NetworkRouter.swift */,
+				9040C4E32302899A00CB18B1 /* TargetType.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		9040C4DD2302896300CB18B1 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				9040C4EF230289DC00CB18B1 /* Image */,
+				9040C4EC230289DC00CB18B1 /* Repo */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		9040C4EC230289DC00CB18B1 /* Repo */ = {
+			isa = PBXGroup;
+			children = (
+				9040C4ED230289DC00CB18B1 /* RepoNetwork.swift */,
+				9040C4EE230289DC00CB18B1 /* RepoTarget.swift */,
+			);
+			path = Repo;
+			sourceTree = "<group>";
+		};
+		9040C4EF230289DC00CB18B1 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				9040C4F0230289DC00CB18B1 /* ImageTarget.swift */,
+				9040C4F1230289DC00CB18B1 /* ImageNetwork.swift */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		9040C5132302A64600CB18B1 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				9040C5142302A69500CB18B1 /* ListRepos */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		9040C5142302A69500CB18B1 /* ListRepos */ = {
+			isa = PBXGroup;
+			children = (
+				9040C5182302A6BB00CB18B1 /* ReposModule.swift */,
+				9040C5332302BAB400CB18B1 /* Entity */,
+				9040C52D2302A6D300CB18B1 /* Interactor */,
+				9040C52F2302AF5700CB18B1 /* Presenter */,
+				9040C5302302AF6400CB18B1 /* Router */,
+				9040C5312302B03000CB18B1 /* View */,
+			);
+			path = ListRepos;
+			sourceTree = "<group>";
+		};
+		9040C52D2302A6D300CB18B1 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				9040C51C2302A6BB00CB18B1 /* ReposInteractor.swift */,
+				9040C5162302A6BB00CB18B1 /* ReposInteractorInput.swift */,
+				9040C5202302A6BB00CB18B1 /* ReposInteractorOutput.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		9040C52F2302AF5700CB18B1 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				9040C51D2302A6BB00CB18B1 /* ReposPresenter.swift */,
+				9040C51A2302A6BB00CB18B1 /* ReposInput.swift */,
+				9040C51E2302A6BB00CB18B1 /* ReposOutput.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		9040C5302302AF6400CB18B1 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				9040C5152302A6BB00CB18B1 /* ReposRouter.swift */,
+				9040C5172302A6BB00CB18B1 /* ReposRouterInput.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		9040C5312302B03000CB18B1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9040C5192302A6BB00CB18B1 /* ReposViewController.swift */,
+				9040C51B2302A6BB00CB18B1 /* ReposViewInput.swift */,
+				9040C51F2302A6BB00CB18B1 /* ReposViewOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9040C5332302BAB400CB18B1 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				9040C5342302BACC00CB18B1 /* Repo.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		9040C5382302C17B00CB18B1 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				9040C5392302C18600CB18B1 /* ListRepos */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		9040C5392302C18600CB18B1 /* ListRepos */ = {
+			isa = PBXGroup;
+			children = (
+				9040C53A2302C19F00CB18B1 /* ReposRouterTests.swift */,
+				9040C53B2302C19F00CB18B1 /* ReposViewControllerTests.swift */,
+				9040C53C2302C19F00CB18B1 /* ReposModuleTests.swift */,
+				9040C53D2302C19F00CB18B1 /* ReposInteractorTests.swift */,
+				9040C53E2302C19F00CB18B1 /* ReposPresenterTests.swift */,
+			);
+			path = ListRepos;
+			sourceTree = "<group>";
+		};
+		90739A32230BD3ED006C1F22 /* Spy */ = {
+			isa = PBXGroup;
+			children = (
+				90739A33230BD3FE006C1F22 /* SpyNavigationController.swift */,
+			);
+			path = Spy;
+			sourceTree = "<group>";
+		};
 		9E88BC3B22FE9A77009E4386 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				90739A32230BD3ED006C1F22 /* Spy */,
 				9E88BC3C22FE9A77009E4386 /* AutoGeneratedProtocolsMocks */,
 			);
 			path = Helpers;
@@ -223,8 +441,8 @@
 		9EE85C2D22FE955F000FC3D6 /* DemoViperTests */ = {
 			isa = PBXGroup;
 			children = (
+				9040C5382302C17B00CB18B1 /* Modules */,
 				9E88BC3B22FE9A77009E4386 /* Helpers */,
-				9EE85C2E22FE955F000FC3D6 /* DemoViperTests.swift */,
 				9EE85C3022FE955F000FC3D6 /* Info.plist */,
 			);
 			path = DemoViperTests;
@@ -247,9 +465,11 @@
 			buildConfigurationList = 9EE85C3E22FE955F000FC3D6 /* Build configuration list for PBXNativeTarget "DemoViper" */;
 			buildPhases = (
 				DFA1C4B2F4F14ACC2F414031 /* [CP] Check Pods Manifest.lock */,
+				9040C5322302B89300CB18B1 /* Run Sourcery */,
 				9EE85C1222FE955F000FC3D6 /* Sources */,
 				9EE85C1322FE955F000FC3D6 /* Frameworks */,
 				9EE85C1422FE955F000FC3D6 /* Resources */,
+				99006068487AB69248E997CA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -412,6 +632,41 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		9040C5322302B89300CB18B1 /* Run Sourcery */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Sourcery";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Pods/Sourcery/bin/sourcery\n";
+		};
+		99006068487AB69248E997CA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DemoViper/Pods-DemoViper-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DemoViper/Pods-DemoViper-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DemoViper/Pods-DemoViper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		DFA1C4B2F4F14ACC2F414031 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -441,14 +696,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9040C5352302BACC00CB18B1 /* Repo.swift in Sources */,
+				9040C4E92302899A00CB18B1 /* TargetType.swift in Sources */,
+				9040C4F72302976700CB18B1 /* Network.swift in Sources */,
+				9040C5262302A6BB00CB18B1 /* ReposInput.swift in Sources */,
+				9040C5252302A6BB00CB18B1 /* ReposViewController.swift in Sources */,
+				9040C5292302A6BB00CB18B1 /* ReposPresenter.swift in Sources */,
 				9040C4D7230283D600CB18B1 /* Interactor.swift in Sources */,
+				9040C5242302A6BB00CB18B1 /* ReposModule.swift in Sources */,
+				9040C5212302A6BB00CB18B1 /* ReposRouter.swift in Sources */,
+				9040C4EB2302899A00CB18B1 /* Mapping.swift in Sources */,
 				9040C4D5230283D600CB18B1 /* Entity.swift in Sources */,
+				9040C4F9230297B100CB18B1 /* Services.swift in Sources */,
+				9040C52C2302A6BB00CB18B1 /* ReposInteractorOutput.swift in Sources */,
 				9040C4D9230283D600CB18B1 /* Presenter.swift in Sources */,
-				9EE85C1C22FE955F000FC3D6 /* ViewController.swift in Sources */,
+				9040C52A2302A6BB00CB18B1 /* ReposOutput.swift in Sources */,
+				9040C52B2302A6BB00CB18B1 /* ReposViewOutput.swift in Sources */,
+				9040C4E82302899A00CB18B1 /* HTTPMethod.swift in Sources */,
+				9040C4E62302899A00CB18B1 /* HTTPTask.swift in Sources */,
+				9EE85C1C22FE955F000FC3D6 /* RootRouter.swift in Sources */,
+				9040C5232302A6BB00CB18B1 /* ReposRouterInput.swift in Sources */,
+				9040C4F5230289DC00CB18B1 /* ImageNetwork.swift in Sources */,
+				9040C5282302A6BB00CB18B1 /* ReposInteractor.swift in Sources */,
+				9040C4F3230289DC00CB18B1 /* RepoTarget.swift in Sources */,
 				9040C4D6230283D600CB18B1 /* Router.swift in Sources */,
+				9040C4F4230289DC00CB18B1 /* ImageTarget.swift in Sources */,
+				9040C5222302A6BB00CB18B1 /* ReposInteractorInput.swift in Sources */,
+				9040C4EA2302899A00CB18B1 /* NetworkRouter.swift in Sources */,
+				9040C4F2230289DC00CB18B1 /* RepoNetwork.swift in Sources */,
 				9040C4D8230283D600CB18B1 /* Module.swift in Sources */,
 				9EE85C1A22FE955F000FC3D6 /* AppDelegate.swift in Sources */,
 				9040C4D4230283D600CB18B1 /* View.swift in Sources */,
+				9040C5272302A6BB00CB18B1 /* ReposViewInput.swift in Sources */,
+				9040C4E72302899A00CB18B1 /* NetworkError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,8 +736,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9EE85C2F22FE955F000FC3D6 /* DemoViperTests.swift in Sources */,
+				9040C5402302C19F00CB18B1 /* ReposViewControllerTests.swift in Sources */,
+				9040C53F2302C19F00CB18B1 /* ReposRouterTests.swift in Sources */,
 				9E88BC3E22FE9A77009E4386 /* AutoMockable.generated.swift in Sources */,
+				90739A34230BD3FE006C1F22 /* SpyNavigationController.swift in Sources */,
+				9040C5412302C19F00CB18B1 /* ReposModuleTests.swift in Sources */,
+				9040C5432302C19F00CB18B1 /* ReposPresenterTests.swift in Sources */,
+				9040C5422302C19F00CB18B1 /* ReposInteractorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
