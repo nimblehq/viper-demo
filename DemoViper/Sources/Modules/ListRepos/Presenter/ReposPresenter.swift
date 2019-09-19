@@ -28,7 +28,8 @@ extension ReposPresenter: ReposViewOutput {
             let module = router?.detail(with: repo.id)
             module?.output = self
             module?.input?.fetchRepository(with: repo.id)
-            module?.input?.enableBookmark(!(repo.didBookmark ?? false))
+            let didBookmark = repo.didBookmark ?? false
+            module?.input?.enableBookmark(!didBookmark)
         }
     }
 }

@@ -251,8 +251,8 @@
 		9040C4CB2302838300CB18B1 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				904CB5B4233348A20017BD6F /* Models */,
 				9040C4CC2302839200CB18B1 /* AppDelegate */,
+				904CB5B4233348A20017BD6F /* Models */,
 				9040C5132302A64600CB18B1 /* Modules */,
 				9040C4DA2302892D00CB18B1 /* Services */,
 			);
