@@ -9,13 +9,15 @@
 // sourcery: AutoMockable
 protocol ReposInteractorInput: AnyObject {
     func getRepos()
-    func getRepoId(at index: Int) -> Int?
+    func getRepo(at index: Int) -> Repo?
+    func updateBookmark(for repoId: Int)
 }
 
 // sourcery: AutoMockable
 protocol ReposInteractorOutput: AnyObject {
-    func didSuccess(with repos: [String])
+    func didSuccess(with repos: [Repo])
     func didFail(with error: Error)
+    func didUpdateRepos(_ repos: [Repo])
 }
 
 final class ReposInteractor {
@@ -36,16 +38,20 @@ extension ReposInteractor: ReposInteractorInput {
             switch result {
             case .success(let repos):
                 self?.repos = repos
-                self?.output?.didSuccess(with: repos.map { $0.fullName })
+                self?.output?.didSuccess(with: repos)
             case .failure(let error):
                 self?.output?.didFail(with: error)
             }
         }
     }
 
-    func getRepoId(at index: Int) -> Int? {
+    func getRepo(at index: Int) -> Repo? {
         guard repos.indices.contains(index) else { return nil }
-        let repo = repos[index]
-        return repo.id
+        return repos[index]
+    }
+
+    func updateBookmark(for repoId: Int) {
+        repos.first(where: { $0.id == repoId })?.didBookmark = true
+        output?.didUpdateRepos(repos)
     }
 }

@@ -10,14 +10,13 @@ import UIKit
 
 // sourcery: AutoMockable
 protocol ReposRouterInput: AnyObject {
-    func detail(with id: Int)
+    func detail(with id: Int) -> RepoModule
     func showError(_ error: Error)
 }
 
 final class ReposRouter {
     
     weak var view: ReposViewInput?
-    private var repoModule: RepoModule?
 
     private var viewController: UIViewController? { 
         return view as? UIViewController
@@ -27,11 +26,10 @@ final class ReposRouter {
 // MARK: - ReposRouterInput
 
 extension ReposRouter: ReposRouterInput {
-    func detail(with id: Int) {
+    func detail(with id: Int) -> RepoModule {
         let module = RepoModule()
-        module.input?.apply(repoId: id)
         viewController?.navigationController?.pushViewController(module.view, animated: true)
-        repoModule = module
+        return module
     }
 
     func showError(_ error: Error) {

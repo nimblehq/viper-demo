@@ -13,5 +13,4 @@ struct RepoItem {
     let repoFullName: String
     let description: String
     let authorName: String
-    let didView: Bool
 }

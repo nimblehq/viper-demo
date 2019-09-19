@@ -46,6 +46,7 @@
 		9040C5412302C19F00CB18B1 /* ReposModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C53C2302C19F00CB18B1 /* ReposModuleTests.swift */; };
 		9040C5422302C19F00CB18B1 /* ReposInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C53D2302C19F00CB18B1 /* ReposInteractorTests.swift */; };
 		9040C5432302C19F00CB18B1 /* ReposPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C53E2302C19F00CB18B1 /* ReposPresenterTests.swift */; };
+		904CB5B6233368290017BD6F /* ReposViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904CB5B5233368290017BD6F /* ReposViewItem.swift */; };
 		90739A34230BD3FE006C1F22 /* SpyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90739A33230BD3FE006C1F22 /* SpyNavigationController.swift */; };
 		9E88BC3E22FE9A77009E4386 /* AutoMockable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E88BC3D22FE9A77009E4386 /* AutoMockable.generated.swift */; };
 		9EE85C1A22FE955F000FC3D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE85C1922FE955F000FC3D6 /* AppDelegate.swift */; };
@@ -116,6 +117,7 @@
 		9040C53C2302C19F00CB18B1 /* ReposModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposModuleTests.swift; sourceTree = "<group>"; };
 		9040C53D2302C19F00CB18B1 /* ReposInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposInteractorTests.swift; sourceTree = "<group>"; };
 		9040C53E2302C19F00CB18B1 /* ReposPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposPresenterTests.swift; sourceTree = "<group>"; };
+		904CB5B5233368290017BD6F /* ReposViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposViewItem.swift; sourceTree = "<group>"; };
 		90739A33230BD3FE006C1F22 /* SpyNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyNavigationController.swift; sourceTree = "<group>"; };
 		9E88BC3D22FE9A77009E4386 /* AutoMockable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoMockable.generated.swift; sourceTree = "<group>"; };
 		9EE85C1622FE955F000FC3D6 /* DemoViper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoViper.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -389,6 +391,7 @@
 			isa = PBXGroup;
 			children = (
 				9040C5192302A6BB00CB18B1 /* ReposViewController.swift */,
+				904CB5B5233368290017BD6F /* ReposViewItem.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -744,6 +747,7 @@
 				9040C4E92302899A00CB18B1 /* TargetType.swift in Sources */,
 				9040C4F72302976700CB18B1 /* Network.swift in Sources */,
 				9030EF20231380A800377A3B /* RepoRouter.swift in Sources */,
+				904CB5B6233368290017BD6F /* ReposViewItem.swift in Sources */,
 				9040C5252302A6BB00CB18B1 /* ReposViewController.swift in Sources */,
 				9040C5292302A6BB00CB18B1 /* ReposPresenter.swift in Sources */,
 				9040C4D7230283D600CB18B1 /* Interactor.swift in Sources */,

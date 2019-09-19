@@ -12,6 +12,7 @@ final class Repo {
     let id: Int
     let name: String
     let fullName: String
+    var didBookmark: Bool = false
 
     init(id: Int,
          name: String,

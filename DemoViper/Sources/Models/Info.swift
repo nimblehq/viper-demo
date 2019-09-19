@@ -14,7 +14,6 @@ final class Info {
     let fullName: String
     let description: String
     let owner: Owner
-    var didView: Bool = false
 
     init(id: Int,
          name: String,

@@ -10,11 +10,14 @@ import UIKit
 
 // sourcery: AutoMockable
 protocol RepoInput: AnyObject {
-    func apply(repoId: Int)
+    func enableBookmark(_ isEnable: Bool)
+    func fetchRepository(with repoId: Int)
 }
 
 // sourcery: AutoMockable
-protocol RepoOutput: AnyObject {}
+protocol RepoOutput: AnyObject {
+    func didBookmarkRepo(with repoId: Int)
+}
 
 final class RepoModule {
     

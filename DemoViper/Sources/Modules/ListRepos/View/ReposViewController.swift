@@ -12,7 +12,7 @@ import UIKit
 protocol ReposViewInput: AnyObject {
     func configure()
     func showEmptyMessage()
-    func showData(_ data: [String])
+    func showData(_ data: [ReposViewItem])
 }
 
 // sourcery: AutoMockable
@@ -32,7 +32,7 @@ final class ReposViewController: UIViewController {
     var output: ReposViewOutput?
 
     // MARK: - Properties
-    private var data: [String] = []
+    private var viewItems: [ReposViewItem] = []
 
     override func viewDidLoad() { 
         super.viewDidLoad()
@@ -51,8 +51,8 @@ extension ReposViewController: ReposViewInput {
         emptyView.isHidden = false
     }
 
-    func showData(_ data: [String]) {
-        self.data = data
+    func showData(_ data: [ReposViewItem]) {
+        self.viewItems = data
         tableView.isHidden = false
         emptyView.isHidden = true
         tableView.reloadData()
@@ -103,15 +103,20 @@ extension ReposViewController {
 // MARK: - UITableViewDataSource
 extension ReposViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return data.count
+        return viewItems.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: UITableViewCell.self)) else {
             fatalError("Cannot file UITableViewCell")
         }
-        cell.textLabel?.text = data[indexPath.row]
-//        cell.accessoryType = .checkmark
+        let item = viewItems[indexPath.row]
+        cell.textLabel?.text = item.title
+        if item.didBookmark {
+            cell.accessoryType = .checkmark
+        } else {
+            cell.accessoryType = .none
+        }
         return cell
     }
 }
@@ -121,5 +126,6 @@ extension ReposViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let index = indexPath.row
         output?.detail(at: index)
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }

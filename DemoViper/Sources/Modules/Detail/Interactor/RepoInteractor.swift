@@ -10,8 +10,8 @@ import Foundation
 
 // sourcery: AutoMockable
 protocol RepoInteractorInput: AnyObject {
-    func updateRepoId(_ id: Int)
-    func getInfo()
+    var repoId: Int? { get }
+    func fetchRepository(with repoId: Int)
     func authorPath() -> String
 }
 
@@ -29,23 +29,20 @@ final class RepoInteractor {
     private let imageService: ImageNetworkProtocol
 
     private var info: Info?
-    private var repoId: Int!
+
+    var repoId: Int? {
+        return info?.id
+    }
 
     init(repoService: RepoNetworkProtocol, imageService: ImageNetworkProtocol) {
         self.repoService = repoService
         self.imageService = imageService
     }
-    
 }
 
 // MARK: - RepoInteractorInput
 extension RepoInteractor: RepoInteractorInput {
-
-    func updateRepoId(_ id: Int) {
-        repoId = id
-    }
-
-    func getInfo() {
+    func fetchRepository(with repoId: Int) {
         repoService.info(id: repoId) { [weak self] result in
             switch result {
             case .success(let info):

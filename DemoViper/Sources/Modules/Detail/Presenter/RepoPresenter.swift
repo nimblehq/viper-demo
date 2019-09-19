@@ -15,19 +15,24 @@ final class RepoPresenter {
     var interactor: RepoInteractorInput?
 
     weak var output: RepoOutput?
-
 }
 
 // MARK: - RepoViewOutput
 extension RepoPresenter: RepoViewOutput {
     func viewDidLoad() {
         view?.configure()
-        interactor?.getInfo()
     }
 
     func openWebPage() {
         if let path = interactor?.authorPath() {
             router?.openWebPage(at: path)
+        }
+    }
+
+    func bookmarkRepo() {
+        view?.enableRightBarButton(false)
+        if let id = interactor?.repoId {
+            output?.didBookmarkRepo(with: id)
         }
     }
 }
@@ -38,8 +43,7 @@ extension RepoPresenter: RepoInteractorOutput {
         let item = RepoItem(repoName: repoInfo.name,
                             repoFullName: repoInfo.fullName,
                             description: repoInfo.description,
-                            authorName: repoInfo.owner.login,
-                            didView: repoInfo.didView)
+                            authorName: repoInfo.owner.login)
         view?.showViewItem(item)
     }
 
@@ -54,7 +58,11 @@ extension RepoPresenter: RepoInteractorOutput {
 
 // MARK: - RepoInput
 extension RepoPresenter: RepoInput {
-    func apply(repoId: Int) {
-        interactor?.updateRepoId(repoId)
+    func enableBookmark(_ isEnable: Bool) {
+        view?.enableRightBarButton(isEnable)
+    }
+
+    func fetchRepository(with repoId: Int) {
+        interactor?.fetchRepository(with: repoId)
     }
 }

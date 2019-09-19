@@ -24,25 +24,41 @@ extension ReposPresenter: ReposViewOutput {
     }
 
     func detail(at index: Int) {
-        if let id = interactor?.getRepoId(at: index) {
-            router?.detail(with: id)
+        if let repo = interactor?.getRepo(at: index) {
+            let module = router?.detail(with: repo.id)
+            module?.output = self
+            module?.input?.fetchRepository(with: repo.id)
+            module?.input?.enableBookmark(!repo.didBookmark)
         }
     }
 }
 
 // MARK: - ReposInteractorOutput
-extension ReposPresenter: ReposInteractorOutput { 
-    func didSuccess(with repos: [String]) {
+extension ReposPresenter: ReposInteractorOutput {
+    func didUpdateRepos(_ repos: [Repo]) {
+        let viewItems = repos.map { ReposViewItem(title: "@" + $0.fullName, didBookmark: $0.didBookmark) }
+        view?.showData(viewItems)
+    }
+
+    func didSuccess(with repos: [Repo]) {
         if repos.isEmpty {
             view?.showEmptyMessage()
         } else {
-            view?.showData(repos.map { "@" + $0 })
+            let viewItems = repos.map { ReposViewItem(title: "@" + $0.fullName, didBookmark: $0.didBookmark) }
+            view?.showData(viewItems)
         }
     }
 
     func didFail(with error: Error) {
         view?.showEmptyMessage()
         router?.showError(error)
+    }
+}
+
+// MARK: - RepoOutput
+extension ReposPresenter: RepoOutput {
+    func didBookmarkRepo(with repoId: Int) {
+        interactor?.updateBookmark(for: repoId)
     }
 }
 
