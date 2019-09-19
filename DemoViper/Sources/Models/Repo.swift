@@ -8,25 +8,9 @@
 
 import Foundation
 
-final class Repo {
+final class Repo: Codable {
     let id: Int
     let name: String
     let fullName: String
-    var didBookmark: Bool = false
-
-    init(id: Int,
-         name: String,
-         fullName: String) {
-        self.id = id
-        self.name = name
-        self.fullName = fullName
-    }
-}
-
-extension Repo: Codable {
-    private enum CodingKeys: String, CodingKey {
-        case id
-        case name
-        case fullName = "full_name"
-    }
+    var didBookmark: Bool? = false
 }

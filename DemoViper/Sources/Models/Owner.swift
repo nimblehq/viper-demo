@@ -8,29 +8,9 @@
 
 import Foundation
 
-final class Owner {
+struct Owner: Codable {
     let id: Int
     let login: String
-    let avatarPath: String
-    let htmlPath: String
-
-    init(id: Int,
-         login: String,
-         avatarPath: String,
-         path: String,
-         htmlPath: String) {
-        self.id = id
-        self.login = login
-        self.avatarPath = avatarPath
-        self.htmlPath = htmlPath
-    }
-}
-
-extension Owner: Codable {
-    private enum CodingKeys: String, CodingKey {
-        case id
-        case login
-        case avatarPath = "avatar_url"
-        case htmlPath = "html_url"
-    }
+    let avatarUrl: String
+    let htmlUrl: String
 }

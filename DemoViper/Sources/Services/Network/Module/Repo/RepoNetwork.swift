@@ -17,6 +17,11 @@ protocol RepoNetworkProtocol {
 final class RepoNetwork {
     
     private let router: NetworkRouter<RepoTarget>
+    private let mapper: JSONDecoder = {
+        let decoder = JSONDecoder()
+        decoder.keyDecodingStrategy = .convertFromSnakeCase
+        return decoder
+    }()
     
     static let `default`: RepoNetwork = {
         let router = NetworkRouter<RepoTarget>()
@@ -31,13 +36,16 @@ final class RepoNetwork {
 // MARK: - RepoNetworkProtocol
 extension RepoNetwork: RepoNetworkProtocol {
     func list(completion: @escaping (Result<[Repo], Error>) -> Void) {
-        router.request(.list) { result in
+        router.request(.list) { [weak self] result in
+            guard let self = self else { return }
             switch result {
             case .success(let data):
-                guard let repos: [Repo] = try? data.map([Repo].self) else {
-                    return completion(.failure(NetworkError.json))
+                do {
+                    let repos: [Repo] = try self.mapper.decode([Repo].self, from: data)
+                    completion(.success(repos))
+                } catch {
+                    completion(.failure(error))
                 }
-                completion(.success(repos))
             case .failure(let error):
                 completion(.failure(error))
             }
@@ -45,14 +53,16 @@ extension RepoNetwork: RepoNetworkProtocol {
     }
 
     func info(id: Int, completion: @escaping (Result<Info, Error>) -> Void) {
-        router.request(.info(id)) { result in
+        router.request(.info(id)) { [weak self] result in
+            guard let self = self else { return }
             switch result {
             case .success(let data):
-                guard let info: Info = try? data.map(Info.self) else {
-                    completion(.failure(NetworkError.json))
-                    return
+                do {
+                    let info: Info = try self.mapper.decode(Info.self, from: data)
+                    completion(.success(info))
+                } catch {
+                    completion(.failure(error))
                 }
-                completion(.success(info))
             case .failure(let error):
                 completion(.failure(error))
             }

@@ -28,7 +28,7 @@ extension ReposPresenter: ReposViewOutput {
             let module = router?.detail(with: repo.id)
             module?.output = self
             module?.input?.fetchRepository(with: repo.id)
-            module?.input?.enableBookmark(!repo.didBookmark)
+            module?.input?.enableBookmark(!(repo.didBookmark ?? false))
         }
     }
 }
@@ -36,7 +36,7 @@ extension ReposPresenter: ReposViewOutput {
 // MARK: - ReposInteractorOutput
 extension ReposPresenter: ReposInteractorOutput {
     func didUpdateRepos(_ repos: [Repo]) {
-        let viewItems = repos.map { ReposViewItem(title: "@" + $0.fullName, didBookmark: $0.didBookmark) }
+        let viewItems = repos.map { ReposViewItem(title: "@" + $0.fullName, didBookmark: $0.didBookmark ?? false) }
         view?.showData(viewItems)
     }
 
@@ -44,7 +44,7 @@ extension ReposPresenter: ReposInteractorOutput {
         if repos.isEmpty {
             view?.showEmptyMessage()
         } else {
-            let viewItems = repos.map { ReposViewItem(title: "@" + $0.fullName, didBookmark: $0.didBookmark) }
+            let viewItems = repos.map { ReposViewItem(title: "@" + $0.fullName, didBookmark: $0.didBookmark ?? false) }
             view?.showData(viewItems)
         }
     }

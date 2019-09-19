@@ -28,7 +28,6 @@
 		9040C4E82302899A00CB18B1 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C4E22302899A00CB18B1 /* HTTPMethod.swift */; };
 		9040C4E92302899A00CB18B1 /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C4E32302899A00CB18B1 /* TargetType.swift */; };
 		9040C4EA2302899A00CB18B1 /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C4E42302899A00CB18B1 /* NetworkRouter.swift */; };
-		9040C4EB2302899A00CB18B1 /* Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C4E52302899A00CB18B1 /* Mapping.swift */; };
 		9040C4F2230289DC00CB18B1 /* RepoNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C4ED230289DC00CB18B1 /* RepoNetwork.swift */; };
 		9040C4F3230289DC00CB18B1 /* RepoTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C4EE230289DC00CB18B1 /* RepoTarget.swift */; };
 		9040C4F4230289DC00CB18B1 /* ImageTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C4F0230289DC00CB18B1 /* ImageTarget.swift */; };
@@ -99,7 +98,6 @@
 		9040C4E22302899A00CB18B1 /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		9040C4E32302899A00CB18B1 /* TargetType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetType.swift; sourceTree = "<group>"; };
 		9040C4E42302899A00CB18B1 /* NetworkRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
-		9040C4E52302899A00CB18B1 /* Mapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mapping.swift; sourceTree = "<group>"; };
 		9040C4ED230289DC00CB18B1 /* RepoNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoNetwork.swift; sourceTree = "<group>"; };
 		9040C4EE230289DC00CB18B1 /* RepoTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoTarget.swift; sourceTree = "<group>"; };
 		9040C4F0230289DC00CB18B1 /* ImageTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTarget.swift; sourceTree = "<group>"; };
@@ -307,7 +305,6 @@
 			children = (
 				9040C4E22302899A00CB18B1 /* HTTPMethod.swift */,
 				9040C4E02302899A00CB18B1 /* HTTPTask.swift */,
-				9040C4E52302899A00CB18B1 /* Mapping.swift */,
 				9040C4E12302899A00CB18B1 /* NetworkError.swift */,
 				9040C4E42302899A00CB18B1 /* NetworkRouter.swift */,
 				9040C4E32302899A00CB18B1 /* TargetType.swift */,
@@ -754,7 +751,6 @@
 				9030EF18231380A800377A3B /* RepoViewController.swift in Sources */,
 				9040C5242302A6BB00CB18B1 /* ReposModule.swift in Sources */,
 				9040C5212302A6BB00CB18B1 /* ReposRouter.swift in Sources */,
-				9040C4EB2302899A00CB18B1 /* Mapping.swift in Sources */,
 				9040C4D5230283D600CB18B1 /* Entity.swift in Sources */,
 				9040C4F9230297B100CB18B1 /* Services.swift in Sources */,
 				9040C4D9230283D600CB18B1 /* Presenter.swift in Sources */,

@@ -57,7 +57,7 @@ extension RepoInteractor: RepoInteractorInput {
 
     func authorPath() -> String {
         guard let info = self.info else { fatalError("Data not found!!") }
-        return info.owner.htmlPath
+        return info.owner.htmlUrl
     }
 }
 
@@ -65,7 +65,7 @@ extension RepoInteractor: RepoInteractorInput {
 extension RepoInteractor {
     private func downloadAvatar() {
         guard let info = self.info else { return }
-        imageService.download(path: info.owner.avatarPath) { [weak self] result in
+        imageService.download(path: info.owner.avatarUrl) { [weak self] result in
             guard let this = self else { return }
             switch result {
             case .success(let data):
