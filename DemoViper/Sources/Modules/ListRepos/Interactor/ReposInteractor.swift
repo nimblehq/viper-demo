@@ -6,7 +6,17 @@
 //  Copyright © 2019 Nimble Co. Ltd. All rights reserved.
 //
 
-import Foundation
+// sourcery: AutoMockable
+protocol ReposInteractorInput: AnyObject {
+    func getRepos()
+    func getRepoId(at index: Int) -> Int?
+}
+
+// sourcery: AutoMockable
+protocol ReposInteractorOutput: AnyObject {
+    func didSuccess(with repos: [String])
+    func didFail(with error: Error)
+}
 
 final class ReposInteractor {
     weak var output: ReposInteractorOutput?

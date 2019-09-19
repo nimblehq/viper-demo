@@ -9,6 +9,13 @@
 import UIKit
 import SafariServices
 
+// sourcery: AutoMockable
+protocol RepoRouterInput: AnyObject {
+    func back()
+    func showError(_ error: Error)
+    func openWebPage(at path: String)
+}
+
 final class RepoRouter {
     
     weak var view: RepoViewInput?

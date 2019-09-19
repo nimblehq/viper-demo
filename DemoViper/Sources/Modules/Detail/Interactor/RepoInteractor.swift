@@ -8,6 +8,20 @@
 
 import Foundation
 
+// sourcery: AutoMockable
+protocol RepoInteractorInput: AnyObject {
+    func updateRepoId(_ id: Int)
+    func getInfo()
+    func authorPath() -> String
+}
+
+// sourcery: AutoMockable
+protocol RepoInteractorOutput: AnyObject {
+    func didSuccess(with repoInfo: Info)
+    func didLoadImage(with data: Data)
+    func didFail(with error: Error)
+}
+
 final class RepoInteractor {
 
     weak var output: RepoInteractorOutput?
@@ -37,7 +51,7 @@ extension RepoInteractor: RepoInteractorInput {
             case .success(let info):
                 self?.info = info
                 self?.downloadAvatar()
-                self?.output?.didSuccess(with: info.repoItem)
+                self?.output?.didSuccess(with: info)
             case .failure(let error):
                 self?.output?.didFail(with: error)
             }

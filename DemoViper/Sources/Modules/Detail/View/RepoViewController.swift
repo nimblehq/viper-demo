@@ -8,6 +8,19 @@
 
 import UIKit
 
+// sourcery: AutoMockable
+protocol RepoViewInput: AnyObject {
+    func configure()
+    func showViewItem(_ item: RepoItem)
+    func showAvatar(_ data: Data)
+}
+
+// sourcery: AutoMockable
+protocol RepoViewOutput: AnyObject {
+    func viewDidLoad()
+    func openWebPage()
+}
+
 final class RepoViewController: UIViewController {
 
     // MARK: - Outlets
@@ -39,6 +52,7 @@ extension RepoViewController: RepoViewInput {
         descriptionLabel.text = item.description
         authorViewTitle.text = "@author"
         authorNameLabel.text = item.authorName
+        navigationItem.rightBarButtonItem?.isEnabled = !item.didView
     }
 
     func showAvatar(_ data: Data) {
@@ -96,6 +110,10 @@ extension RepoViewController {
 
     private func setUpViews() {
         view.backgroundColor = .white
+
+        let viewedButton = UIBarButtonItem(title: "Viewed", style: .plain, target: self, action: #selector(didTapViewed))
+        navigationItem.rightBarButtonItem = viewedButton
+
         repoNameLabel.font = .boldSystemFont(ofSize: 19.0)
         descriptionLabel.numberOfLines = 0
 
@@ -113,5 +131,9 @@ extension RepoViewController {
 extension RepoViewController {
     @objc private func didTapOwner(_ sender: Any) {
         output?.openWebPage()
+    }
+
+    @objc private func didTapViewed(_ sender: Any) {
+
     }
 }

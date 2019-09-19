@@ -12,18 +12,11 @@
 		9030EF12231380A800377A3B /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9030EEFE231380A100377A3B /* Info.swift */; };
 		9030EF13231380A800377A3B /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9030EEFF231380A100377A3B /* Owner.swift */; };
 		9030EF14231380A800377A3B /* RepoViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9030EF01231380A100377A3B /* RepoViewItem.swift */; };
-		9030EF15231380A800377A3B /* RepoInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9030EF02231380A100377A3B /* RepoInput.swift */; };
-		9030EF16231380A800377A3B /* RepoOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9030EF03231380A100377A3B /* RepoOutput.swift */; };
 		9030EF17231380A800377A3B /* RepoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9030EF04231380A100377A3B /* RepoPresenter.swift */; };
 		9030EF18231380A800377A3B /* RepoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9030EF06231380A100377A3B /* RepoViewController.swift */; };
-		9030EF1A231380A800377A3B /* RepoViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9030EF08231380A100377A3B /* RepoViewOutput.swift */; };
-		9030EF1B231380A800377A3B /* RepoViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9030EF09231380A100377A3B /* RepoViewInput.swift */; };
 		9030EF1C231380A800377A3B /* RepoModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9030EF0A231380A100377A3B /* RepoModule.swift */; };
-		9030EF1D231380A800377A3B /* RepoInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9030EF0C231380A100377A3B /* RepoInteractorInput.swift */; };
 		9030EF1E231380A800377A3B /* RepoInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9030EF0D231380A100377A3B /* RepoInteractor.swift */; };
-		9030EF1F231380A800377A3B /* RepoInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9030EF0E231380A100377A3B /* RepoInteractorOutput.swift */; };
 		9030EF20231380A800377A3B /* RepoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9030EF10231380A100377A3B /* RepoRouter.swift */; };
-		9030EF21231380A800377A3B /* RepoRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9030EF11231380A100377A3B /* RepoRouterInput.swift */; };
 		9040C4D4230283D600CB18B1 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C4CE230283D600CB18B1 /* View.swift */; };
 		9040C4D5230283D600CB18B1 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C4CF230283D600CB18B1 /* Entity.swift */; };
 		9040C4D6230283D600CB18B1 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C4D0230283D600CB18B1 /* Router.swift */; };
@@ -43,17 +36,10 @@
 		9040C4F72302976700CB18B1 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C4F62302976700CB18B1 /* Network.swift */; };
 		9040C4F9230297B100CB18B1 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C4F8230297B100CB18B1 /* Services.swift */; };
 		9040C5212302A6BB00CB18B1 /* ReposRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C5152302A6BB00CB18B1 /* ReposRouter.swift */; };
-		9040C5222302A6BB00CB18B1 /* ReposInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C5162302A6BB00CB18B1 /* ReposInteractorInput.swift */; };
-		9040C5232302A6BB00CB18B1 /* ReposRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C5172302A6BB00CB18B1 /* ReposRouterInput.swift */; };
 		9040C5242302A6BB00CB18B1 /* ReposModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C5182302A6BB00CB18B1 /* ReposModule.swift */; };
 		9040C5252302A6BB00CB18B1 /* ReposViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C5192302A6BB00CB18B1 /* ReposViewController.swift */; };
-		9040C5262302A6BB00CB18B1 /* ReposInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C51A2302A6BB00CB18B1 /* ReposInput.swift */; };
-		9040C5272302A6BB00CB18B1 /* ReposViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C51B2302A6BB00CB18B1 /* ReposViewInput.swift */; };
 		9040C5282302A6BB00CB18B1 /* ReposInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C51C2302A6BB00CB18B1 /* ReposInteractor.swift */; };
 		9040C5292302A6BB00CB18B1 /* ReposPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C51D2302A6BB00CB18B1 /* ReposPresenter.swift */; };
-		9040C52A2302A6BB00CB18B1 /* ReposOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C51E2302A6BB00CB18B1 /* ReposOutput.swift */; };
-		9040C52B2302A6BB00CB18B1 /* ReposViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C51F2302A6BB00CB18B1 /* ReposViewOutput.swift */; };
-		9040C52C2302A6BB00CB18B1 /* ReposInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C5202302A6BB00CB18B1 /* ReposInteractorOutput.swift */; };
 		9040C5352302BACC00CB18B1 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C5342302BACC00CB18B1 /* Repo.swift */; };
 		9040C53F2302C19F00CB18B1 /* ReposRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C53A2302C19F00CB18B1 /* ReposRouterTests.swift */; };
 		9040C5402302C19F00CB18B1 /* ReposViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9040C53B2302C19F00CB18B1 /* ReposViewControllerTests.swift */; };
@@ -96,18 +82,11 @@
 		9030EEFE231380A100377A3B /* Info.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
 		9030EEFF231380A100377A3B /* Owner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
 		9030EF01231380A100377A3B /* RepoViewItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoViewItem.swift; sourceTree = "<group>"; };
-		9030EF02231380A100377A3B /* RepoInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoInput.swift; sourceTree = "<group>"; };
-		9030EF03231380A100377A3B /* RepoOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoOutput.swift; sourceTree = "<group>"; };
 		9030EF04231380A100377A3B /* RepoPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoPresenter.swift; sourceTree = "<group>"; };
 		9030EF06231380A100377A3B /* RepoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoViewController.swift; sourceTree = "<group>"; };
-		9030EF08231380A100377A3B /* RepoViewOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoViewOutput.swift; sourceTree = "<group>"; };
-		9030EF09231380A100377A3B /* RepoViewInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoViewInput.swift; sourceTree = "<group>"; };
 		9030EF0A231380A100377A3B /* RepoModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoModule.swift; sourceTree = "<group>"; };
-		9030EF0C231380A100377A3B /* RepoInteractorInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoInteractorInput.swift; sourceTree = "<group>"; };
 		9030EF0D231380A100377A3B /* RepoInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoInteractor.swift; sourceTree = "<group>"; };
-		9030EF0E231380A100377A3B /* RepoInteractorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoInteractorOutput.swift; sourceTree = "<group>"; };
 		9030EF10231380A100377A3B /* RepoRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoRouter.swift; sourceTree = "<group>"; };
-		9030EF11231380A100377A3B /* RepoRouterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoRouterInput.swift; sourceTree = "<group>"; };
 		9040C4CE230283D600CB18B1 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		9040C4CF230283D600CB18B1 /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
 		9040C4D0230283D600CB18B1 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
@@ -127,17 +106,10 @@
 		9040C4F62302976700CB18B1 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		9040C4F8230297B100CB18B1 /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
 		9040C5152302A6BB00CB18B1 /* ReposRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposRouter.swift; sourceTree = "<group>"; };
-		9040C5162302A6BB00CB18B1 /* ReposInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposInteractorInput.swift; sourceTree = "<group>"; };
-		9040C5172302A6BB00CB18B1 /* ReposRouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposRouterInput.swift; sourceTree = "<group>"; };
 		9040C5182302A6BB00CB18B1 /* ReposModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposModule.swift; sourceTree = "<group>"; };
 		9040C5192302A6BB00CB18B1 /* ReposViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposViewController.swift; sourceTree = "<group>"; };
-		9040C51A2302A6BB00CB18B1 /* ReposInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposInput.swift; sourceTree = "<group>"; };
-		9040C51B2302A6BB00CB18B1 /* ReposViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposViewInput.swift; sourceTree = "<group>"; };
 		9040C51C2302A6BB00CB18B1 /* ReposInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposInteractor.swift; sourceTree = "<group>"; };
 		9040C51D2302A6BB00CB18B1 /* ReposPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposPresenter.swift; sourceTree = "<group>"; };
-		9040C51E2302A6BB00CB18B1 /* ReposOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposOutput.swift; sourceTree = "<group>"; };
-		9040C51F2302A6BB00CB18B1 /* ReposViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposViewOutput.swift; sourceTree = "<group>"; };
-		9040C5202302A6BB00CB18B1 /* ReposInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposInteractorOutput.swift; sourceTree = "<group>"; };
 		9040C5342302BACC00CB18B1 /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
 		9040C53A2302C19F00CB18B1 /* ReposRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposRouterTests.swift; sourceTree = "<group>"; };
 		9040C53B2302C19F00CB18B1 /* ReposViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposViewControllerTests.swift; sourceTree = "<group>"; };
@@ -222,26 +194,13 @@
 				9030EF0F231380A100377A3B /* Router */,
 				9030EF00231380A100377A3B /* Presenter */,
 				9030EF0B231380A100377A3B /* Interactor */,
-				9030EEFD231380A100377A3B /* Entity */,
 			);
 			path = Detail;
-			sourceTree = "<group>";
-		};
-		9030EEFD231380A100377A3B /* Entity */ = {
-			isa = PBXGroup;
-			children = (
-				9030EEFE231380A100377A3B /* Info.swift */,
-				9030EEFF231380A100377A3B /* Owner.swift */,
-			);
-			path = Entity;
 			sourceTree = "<group>";
 		};
 		9030EF00231380A100377A3B /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				9030EF01231380A100377A3B /* RepoViewItem.swift */,
-				9030EF02231380A100377A3B /* RepoInput.swift */,
-				9030EF03231380A100377A3B /* RepoOutput.swift */,
 				9030EF04231380A100377A3B /* RepoPresenter.swift */,
 			);
 			path = Presenter;
@@ -250,9 +209,8 @@
 		9030EF05231380A100377A3B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9030EF01231380A100377A3B /* RepoViewItem.swift */,
 				9030EF06231380A100377A3B /* RepoViewController.swift */,
-				9030EF08231380A100377A3B /* RepoViewOutput.swift */,
-				9030EF09231380A100377A3B /* RepoViewInput.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -260,9 +218,7 @@
 		9030EF0B231380A100377A3B /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
-				9030EF0C231380A100377A3B /* RepoInteractorInput.swift */,
 				9030EF0D231380A100377A3B /* RepoInteractor.swift */,
-				9030EF0E231380A100377A3B /* RepoInteractorOutput.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -271,7 +227,6 @@
 			isa = PBXGroup;
 			children = (
 				9030EF10231380A100377A3B /* RepoRouter.swift */,
-				9030EF11231380A100377A3B /* RepoRouterInput.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -296,6 +251,7 @@
 		9040C4CB2302838300CB18B1 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				904CB5B4233348A20017BD6F /* Models */,
 				9040C4CC2302839200CB18B1 /* AppDelegate */,
 				9040C5132302A64600CB18B1 /* Modules */,
 				9040C4DA2302892D00CB18B1 /* Services */,
@@ -401,7 +357,6 @@
 				9040C5302302AF6400CB18B1 /* Router */,
 				9040C52F2302AF5700CB18B1 /* Presenter */,
 				9040C52D2302A6D300CB18B1 /* Interactor */,
-				9040C5332302BAB400CB18B1 /* Entity */,
 			);
 			path = ListRepos;
 			sourceTree = "<group>";
@@ -410,8 +365,6 @@
 			isa = PBXGroup;
 			children = (
 				9040C51C2302A6BB00CB18B1 /* ReposInteractor.swift */,
-				9040C5162302A6BB00CB18B1 /* ReposInteractorInput.swift */,
-				9040C5202302A6BB00CB18B1 /* ReposInteractorOutput.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -420,8 +373,6 @@
 			isa = PBXGroup;
 			children = (
 				9040C51D2302A6BB00CB18B1 /* ReposPresenter.swift */,
-				9040C51A2302A6BB00CB18B1 /* ReposInput.swift */,
-				9040C51E2302A6BB00CB18B1 /* ReposOutput.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -430,7 +381,6 @@
 			isa = PBXGroup;
 			children = (
 				9040C5152302A6BB00CB18B1 /* ReposRouter.swift */,
-				9040C5172302A6BB00CB18B1 /* ReposRouterInput.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -439,18 +389,8 @@
 			isa = PBXGroup;
 			children = (
 				9040C5192302A6BB00CB18B1 /* ReposViewController.swift */,
-				9040C51B2302A6BB00CB18B1 /* ReposViewInput.swift */,
-				9040C51F2302A6BB00CB18B1 /* ReposViewOutput.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		9040C5332302BAB400CB18B1 /* Entity */ = {
-			isa = PBXGroup;
-			children = (
-				9040C5342302BACC00CB18B1 /* Repo.swift */,
-			);
-			path = Entity;
 			sourceTree = "<group>";
 		};
 		9040C5382302C17B00CB18B1 /* Modules */ = {
@@ -471,6 +411,16 @@
 				9040C53E2302C19F00CB18B1 /* ReposPresenterTests.swift */,
 			);
 			path = ListRepos;
+			sourceTree = "<group>";
+		};
+		904CB5B4233348A20017BD6F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9040C5342302BACC00CB18B1 /* Repo.swift */,
+				9030EEFF231380A100377A3B /* Owner.swift */,
+				9030EEFE231380A100377A3B /* Info.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		90739A32230BD3ED006C1F22 /* Spy */ = {
@@ -789,13 +739,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9030EF16231380A800377A3B /* RepoOutput.swift in Sources */,
 				9030EF1C231380A800377A3B /* RepoModule.swift in Sources */,
 				9040C5352302BACC00CB18B1 /* Repo.swift in Sources */,
 				9040C4E92302899A00CB18B1 /* TargetType.swift in Sources */,
 				9040C4F72302976700CB18B1 /* Network.swift in Sources */,
 				9030EF20231380A800377A3B /* RepoRouter.swift in Sources */,
-				9040C5262302A6BB00CB18B1 /* ReposInput.swift in Sources */,
 				9040C5252302A6BB00CB18B1 /* ReposViewController.swift in Sources */,
 				9040C5292302A6BB00CB18B1 /* ReposPresenter.swift in Sources */,
 				9040C4D7230283D600CB18B1 /* Interactor.swift in Sources */,
@@ -805,36 +753,24 @@
 				9040C4EB2302899A00CB18B1 /* Mapping.swift in Sources */,
 				9040C4D5230283D600CB18B1 /* Entity.swift in Sources */,
 				9040C4F9230297B100CB18B1 /* Services.swift in Sources */,
-				9040C52C2302A6BB00CB18B1 /* ReposInteractorOutput.swift in Sources */,
 				9040C4D9230283D600CB18B1 /* Presenter.swift in Sources */,
-				9040C52A2302A6BB00CB18B1 /* ReposOutput.swift in Sources */,
-				9040C52B2302A6BB00CB18B1 /* ReposViewOutput.swift in Sources */,
 				9040C4E82302899A00CB18B1 /* HTTPMethod.swift in Sources */,
-				9030EF1B231380A800377A3B /* RepoViewInput.swift in Sources */,
 				9030EF14231380A800377A3B /* RepoViewItem.swift in Sources */,
 				9040C4E62302899A00CB18B1 /* HTTPTask.swift in Sources */,
 				9EE85C1C22FE955F000FC3D6 /* RootRouter.swift in Sources */,
 				9030EF1E231380A800377A3B /* RepoInteractor.swift in Sources */,
-				9030EF1F231380A800377A3B /* RepoInteractorOutput.swift in Sources */,
-				9040C5232302A6BB00CB18B1 /* ReposRouterInput.swift in Sources */,
 				9040C4F5230289DC00CB18B1 /* ImageNetwork.swift in Sources */,
 				9040C5282302A6BB00CB18B1 /* ReposInteractor.swift in Sources */,
 				9040C4F3230289DC00CB18B1 /* RepoTarget.swift in Sources */,
-				9030EF1A231380A800377A3B /* RepoViewOutput.swift in Sources */,
-				9030EF1D231380A800377A3B /* RepoInteractorInput.swift in Sources */,
 				9030EF13231380A800377A3B /* Owner.swift in Sources */,
 				9040C4D6230283D600CB18B1 /* Router.swift in Sources */,
 				9040C4F4230289DC00CB18B1 /* ImageTarget.swift in Sources */,
-				9040C5222302A6BB00CB18B1 /* ReposInteractorInput.swift in Sources */,
 				9030EF17231380A800377A3B /* RepoPresenter.swift in Sources */,
 				9040C4EA2302899A00CB18B1 /* NetworkRouter.swift in Sources */,
-				9030EF21231380A800377A3B /* RepoRouterInput.swift in Sources */,
 				9040C4F2230289DC00CB18B1 /* RepoNetwork.swift in Sources */,
 				9040C4D8230283D600CB18B1 /* Module.swift in Sources */,
 				9EE85C1A22FE955F000FC3D6 /* AppDelegate.swift in Sources */,
-				9030EF15231380A800377A3B /* RepoInput.swift in Sources */,
 				9040C4D4230283D600CB18B1 /* View.swift in Sources */,
-				9040C5272302A6BB00CB18B1 /* ReposViewInput.swift in Sources */,
 				9040C4E72302899A00CB18B1 /* NetworkError.swift in Sources */,
 				9030EF12231380A800377A3B /* Info.swift in Sources */,
 			);

@@ -8,6 +8,14 @@
 
 import UIKit
 
+// sourcery: AutoMockable
+protocol RepoInput: AnyObject {
+    func apply(repoId: Int)
+}
+
+// sourcery: AutoMockable
+protocol RepoOutput: AnyObject {}
+
 final class RepoModule {
     
     let view: RepoViewController

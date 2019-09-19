@@ -6,15 +6,13 @@
 //  Copyright © 2019 Nimble Co. Ltd. All rights reserved.
 //
 
-import Foundation
-
 final class ReposPresenter {
 
     weak var view: ReposViewInput?
     var router: ReposRouterInput?
     var interactor: ReposInteractorInput?
 
-    var output: ReposOutput?
+    weak var output: ReposOutput?
 
 }
 

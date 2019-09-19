@@ -14,7 +14,7 @@ final class RepoPresenter {
     var router: RepoRouterInput?
     var interactor: RepoInteractorInput?
 
-    var output: RepoOutput?
+    weak var output: RepoOutput?
 
 }
 
@@ -34,7 +34,12 @@ extension RepoPresenter: RepoViewOutput {
 
 // MARK: - RepoInteractorOutput
 extension RepoPresenter: RepoInteractorOutput {
-    func didSuccess(with item: RepoItem) {
+    func didSuccess(with repoInfo: Info) {
+        let item = RepoItem(repoName: repoInfo.name,
+                            repoFullName: repoInfo.fullName,
+                            description: repoInfo.description,
+                            authorName: repoInfo.owner.login,
+                            didView: repoInfo.didView)
         view?.showViewItem(item)
     }
 

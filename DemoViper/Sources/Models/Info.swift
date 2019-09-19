@@ -14,6 +14,7 @@ final class Info {
     let fullName: String
     let description: String
     let owner: Owner
+    var didView: Bool = false
 
     init(id: Int,
          name: String,
@@ -36,15 +37,5 @@ extension Info: Codable {
         case fullName = "full_name"
         case description
         case owner
-    }
-}
-
-// MARK: - InfoItem
-extension Info {
-    var repoItem: RepoItem {
-        return RepoItem(repoName: name,
-                        repoFullName: fullName,
-                        description: description,
-                        authorName: owner.login)
     }
 }

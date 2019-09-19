@@ -7,7 +7,19 @@
 //
 
 import UIKit
-import SnapKit
+
+// sourcery: AutoMockable
+protocol ReposViewInput: AnyObject {
+    func configure()
+    func showEmptyMessage()
+    func showData(_ data: [String])
+}
+
+// sourcery: AutoMockable
+protocol ReposViewOutput: AnyObject {
+    func viewDidLoad()
+    func detail(at index: Int)
+}
 
 final class ReposViewController: UIViewController {
 
@@ -99,7 +111,7 @@ extension ReposViewController: UITableViewDataSource {
             fatalError("Cannot file UITableViewCell")
         }
         cell.textLabel?.text = data[indexPath.row]
-        cell.accessoryType = .disclosureIndicator
+//        cell.accessoryType = .checkmark
         return cell
     }
 }
