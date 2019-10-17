@@ -6,15 +6,13 @@
 //  Copyright © 2019 Nimble Co. Ltd. All rights reserved.
 //
 
-import Foundation
-
 final class ReposPresenter {
 
     weak var view: ReposViewInput?
     var router: ReposRouterInput?
     var interactor: ReposInteractorInput?
 
-    var output: ReposOutput?
+    weak var output: ReposOutput?
 
 }
 
@@ -26,25 +24,42 @@ extension ReposPresenter: ReposViewOutput {
     }
 
     func detail(at index: Int) {
-        if let id = interactor?.getRepoId(at: index) {
-            router?.detail(with: id)
+        if let repo = interactor?.getRepo(at: index) {
+            let module = router?.detail(with: repo.id)
+            module?.output = self
+            module?.input?.fetchRepository(with: repo.id)
+            let didBookmark = repo.didBookmark ?? false
+            module?.input?.enableBookmark(!didBookmark)
         }
     }
 }
 
 // MARK: - ReposInteractorOutput
-extension ReposPresenter: ReposInteractorOutput { 
-    func didSuccess(with repos: [String]) {
+extension ReposPresenter: ReposInteractorOutput {
+    func didUpdateRepos(_ repos: [Repo]) {
+        let viewItems = repos.map { ReposViewItem(title: "@" + $0.fullName, didBookmark: $0.didBookmark ?? false) }
+        view?.showData(viewItems)
+    }
+
+    func didSuccess(with repos: [Repo]) {
         if repos.isEmpty {
             view?.showEmptyMessage()
         } else {
-            view?.showData(repos.map { "@" + $0 })
+            let viewItems = repos.map { ReposViewItem(title: "@" + $0.fullName, didBookmark: $0.didBookmark ?? false) }
+            view?.showData(viewItems)
         }
     }
 
     func didFail(with error: Error) {
         view?.showEmptyMessage()
         router?.showError(error)
+    }
+}
+
+// MARK: - RepoOutput
+extension ReposPresenter: RepoOutput {
+    func didBookmarkRepo(with repoId: Int) {
+        interactor?.updateBookmark(for: repoId)
     }
 }
 

@@ -8,6 +8,12 @@
 
 import UIKit
 
+// sourcery: AutoMockable
+protocol ReposInput: AnyObject {}
+
+// sourcery: AutoMockable
+protocol ReposOutput: AnyObject {}
+
 final class ReposModule {
     
     let view: ReposViewController

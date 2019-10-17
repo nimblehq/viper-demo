@@ -1,5 +1,5 @@
 //
-//  ReposInput.swift
+//  Owner.swift
 //  DemoViper
 //
 //  Created by Su Van Ho on 13/8/19.
@@ -8,7 +8,9 @@
 
 import Foundation
 
-// sourcery: AutoMockable
-protocol ReposInput: AnyObject {
-
+struct Owner: Codable {
+    let id: Int
+    let login: String
+    let avatarUrl: String
+    let htmlUrl: String
 }

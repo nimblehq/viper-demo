@@ -1,5 +1,5 @@
 //
-//  ReposOutput.swift
+//  Repo.swift
 //  DemoViper
 //
 //  Created by Su Van Ho on 13/8/19.
@@ -8,7 +8,9 @@
 
 import Foundation
 
-// sourcery: AutoMockable
-protocol ReposOutput: AnyObject {
-
+final class Repo: Codable {
+    let id: Int
+    let name: String
+    let fullName: String
+    var didBookmark: Bool? = false
 }

@@ -8,6 +8,12 @@
 
 import UIKit
 
+// sourcery: AutoMockable
+protocol ReposRouterInput: AnyObject {
+    func detail(with id: Int) -> RepoModule
+    func showError(_ error: Error)
+}
+
 final class ReposRouter {
     
     weak var view: ReposViewInput?
@@ -20,8 +26,10 @@ final class ReposRouter {
 // MARK: - ReposRouterInput
 
 extension ReposRouter: ReposRouterInput {
-    func detail(with id: Int) {
-        // Create a new module
+    func detail(with id: Int) -> RepoModule {
+        let module = RepoModule()
+        viewController?.navigationController?.pushViewController(module.view, animated: true)
+        return module
     }
 
     func showError(_ error: Error) {
