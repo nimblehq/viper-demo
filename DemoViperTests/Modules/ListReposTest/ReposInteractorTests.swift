@@ -33,11 +33,16 @@ final class ReposInteractorTests: XCTestCase {
     func testGetReposWhenSuccess() {
         interactor.getRepos()
         let completion = service.listCompletionReceivedCompletion
-        let repo = Repo(id: 1, name: "repoName1", fullName: "repoFullName1")
-        let repo1 = Repo(id: 2, name: "repoName2", fullName: "repoFullName2")
+        let repo = Repo(from: """
+                        {"id": 1, "name": "repoName1", "fullName": "repoFullName1"}
+                        """)!
+        let repo1 = Repo(from: """
+                        {"id": 2, "name": "repoName2", "fullName": "repoFullName2"}
+                        """)!
         let repos: [Repo] = [repo, repo1]
         completion?(.success(repos))
-        XCTAssertEqual(repos.map { $0.fullName }, output.didSuccessWithReceivedRepos)
+        let reposFullname = output.didSuccessWithReceivedRepos?.compactMap { $0.fullName }
+        XCTAssertEqual(repos.map { $0.fullName }, reposFullname)
     }
 
     func testGetRepoWhenFail() {
@@ -51,13 +56,16 @@ final class ReposInteractorTests: XCTestCase {
     func testGetRepoId() {
         interactor.getRepos()
         let completion = service.listCompletionReceivedCompletion
-        let repo = Repo(id: 1, name: "repoName1", fullName: "repoFullName1")
-        let repo1 = Repo(id: 2, name: "repoName2", fullName: "repoFullName2")
+        let repo = Repo(from: """
+                        {"id": 1, "name": "repoName1", "fullName": "repoFullName1"}
+                        """)!
+        let repo1 = Repo(from: """
+                        {"id": 2, "name": "repoName2", "fullName": "repoFullName2"}
+                        """)!
         let repos: [Repo] = [repo, repo1]
         completion?(.success(repos))
 
-        let index = 0
-        let repoId = interactor.getRepoId(at: index)
+        let repoId = interactor.getRepo(at: 0)?.id
         XCTAssertEqual(repoId, 1)
     }
 }

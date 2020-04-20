@@ -7,6 +7,8 @@ target 'DemoViper' do
 
   def testing_pods
     pod 'Sourcery'
+    pod 'Nimble'
+    pod 'Quick'
   end
 
   target 'DemoViperTests' do
