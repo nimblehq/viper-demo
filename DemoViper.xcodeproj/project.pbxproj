@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		224DA24D2456894100424B5B /* RepoInstances.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224DA24C2456894100424B5B /* RepoInstances.swift */; };
 		22A3A122244D5CD800805266 /* ReposInteractorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A3A11D244D5CD800805266 /* ReposInteractorSpec.swift */; };
 		22A3A123244D5CD800805266 /* ReposRouterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A3A11E244D5CD800805266 /* ReposRouterSpec.swift */; };
 		22A3A124244D5CD800805266 /* ReposViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A3A11F244D5CD800805266 /* ReposViewControllerSpec.swift */; };
@@ -80,6 +81,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		224DA24C2456894100424B5B /* RepoInstances.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoInstances.swift; sourceTree = "<group>"; };
 		22A3A11D244D5CD800805266 /* ReposInteractorSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposInteractorSpec.swift; sourceTree = "<group>"; };
 		22A3A11E244D5CD800805266 /* ReposRouterSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposRouterSpec.swift; sourceTree = "<group>"; };
 		22A3A11F244D5CD800805266 /* ReposViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposViewControllerSpec.swift; sourceTree = "<group>"; };
@@ -175,6 +177,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		224DA24B2456891700424B5B /* Instances */ = {
+			isa = PBXGroup;
+			children = (
+				224DA24C2456894100424B5B /* RepoInstances.swift */,
+			);
+			path = Instances;
+			sourceTree = "<group>";
+		};
 		22A3A11C244D5C3700805266 /* ListReposSpec */ = {
 			isa = PBXGroup;
 			children = (
@@ -429,6 +439,7 @@
 		9040C5382302C17B00CB18B1 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				224DA24B2456891700424B5B /* Instances */,
 				22A3A11C244D5C3700805266 /* ListReposSpec */,
 				9040C5392302C18600CB18B1 /* ListReposTest */,
 			);
@@ -856,6 +867,7 @@
 				22A3A126244D5CD800805266 /* ReposModuleSpec.swift in Sources */,
 				22A3A125244D5CD800805266 /* ReposPresenterSpec.swift in Sources */,
 				9E88BC3E22FE9A77009E4386 /* AutoMockable.generated.swift in Sources */,
+				224DA24D2456894100424B5B /* RepoInstances.swift in Sources */,
 				22A3A122244D5CD800805266 /* ReposInteractorSpec.swift in Sources */,
 				90739A34230BD3FE006C1F22 /* SpyNavigationController.swift in Sources */,
 				22A3A123244D5CD800805266 /* ReposRouterSpec.swift in Sources */,

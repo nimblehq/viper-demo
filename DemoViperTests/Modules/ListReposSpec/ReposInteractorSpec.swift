@@ -18,12 +18,8 @@ final class ReposInteractorSpec: QuickSpec {
         var interactor: ReposInteractor!
         var output: ReposInteractorOutputMock!
         var service: RepoNetworkProtocolMock!
-        let repo1 = Repo(from: """
-                        {"id": 1, "name": "repoName1", "fullName": "repoFullName1"}
-                        """)!
-        let repo2 = Repo(from: """
-                        {"id": 2, "name": "repoName2", "fullName": "repoFullName2"}
-                        """)!
+        let repo1 = RepoInstance.repo1
+        let repo2 = RepoInstance.repo2
 
         describe("a Repos interactor") { 
 

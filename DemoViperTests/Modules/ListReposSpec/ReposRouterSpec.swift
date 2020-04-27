@@ -50,10 +50,11 @@ final class ReposRouterSpec: QuickSpec {
                 }
 
                 it("checks presented controller") {
-                    expect(viewController.presentedViewController)
-                        .toNotEventually(beNil(),
-                                         timeout: 3.0,
-                                         description: "Wait for animation of presented controller")
+                    expect(viewController.presentedViewController).toNotEventually(
+                        beNil(),
+                        timeout: 3.0,
+                        description: "Wait for animation of presented controller"
+                    )
                 }
             }
         }

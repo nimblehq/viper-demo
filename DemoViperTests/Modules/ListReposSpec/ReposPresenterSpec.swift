@@ -20,12 +20,8 @@ final class ReposPresenterSpec: QuickSpec {
         var interactor: ReposInteractorInputMock!
         var view: ReposViewInputMock!
         var output: ReposOutputMock!
-        let repo1 = Repo(from: """
-                        {"id": 1, "name": "repoName1", "fullName": "repoFullName1"}
-                        """)!
-        let repo2 = Repo(from: """
-                        {"id": 2, "name": "repoName2", "fullName": "repoFullName2"}
-                        """)!
+        let repo1 = RepoInstance.repo1
+        let repo2 = RepoInstance.repo2
 
         describe("a Repos presenter") { 
 
@@ -33,9 +29,7 @@ final class ReposPresenterSpec: QuickSpec {
                 router = ReposRouterInputMock()
                 router.detailWithReturnValue = RepoModule()
                 interactor = ReposInteractorInputMock()
-                interactor.getRepoAtReturnValue = Repo(from: """
-                                                {"id": 8, "name": "repoName8", "fullName": "repoFullName8"}
-                                                """)!
+                interactor.getRepoAtReturnValue = RepoInstance.repo8
                 view = ReposViewInputMock()
                 presenter = ReposPresenter()
                 output = ReposOutputMock()
