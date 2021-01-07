@@ -22,8 +22,9 @@ final class ReposPresenterTests: XCTestCase {
         super.setUp()
 
         router = ReposRouterInputMock()
+        router.detailWithReturnValue = RepoModule()
         interactor = ReposInteractorInputMock()
-        interactor.getRepoIdAtReturnValue = 8
+        interactor.getRepoAtReturnValue = Repo(id: 8, name: "repoName8", fullName: "repoFullName8")
         view = ReposViewInputMock()
         presenter = ReposPresenter()
         output = ReposOutputMock()
@@ -51,20 +52,22 @@ final class ReposPresenterTests: XCTestCase {
     func testShowDetailRepo() {
         let index: Int = 0
         presenter.detail(at: index)
-        XCTAssertEqual(interactor.getRepoIdAtReceivedIndex, 0)
+        XCTAssertEqual(interactor.getRepoAtReceivedIndex, 0)
         XCTAssertEqual(router.detailWithReceivedId, 8)
     }
 
     func testDidSuccessWithEmptyData() {
-        let repos: [String] = []
+        let repos: [Repo] = []
         presenter.didSuccess(with: repos)
         XCTAssertTrue(view.showEmptyMessageCalled)
     }
 
     func testDidSuccessWithNonEmptyData() {
-        let repos: [String] = ["testRepo", "testRepo1"]
+        let testRepo1 = Repo(id: 1, name: "repoName1", fullName: "repoFullName1")
+        let testRepo2 = Repo(id: 2, name: "repoName2", fullName: "repoFullName2")
+        let repos: [Repo] = [testRepo1, testRepo2]
         presenter.didSuccess(with: repos)
-        XCTAssertEqual(view.showDataReceivedData, repos.map { "@" + $0 })
+        XCTAssertEqual(view.showDataReceivedData, repos.map { ReposViewItem(title: "@" + $0.fullName, didBookmark: false) })
     }
 
     func testDidFailWithError() {
