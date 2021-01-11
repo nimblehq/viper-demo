@@ -15,3 +15,10 @@ extension TimeInterval {
     static let medium: TimeInterval = 5.0
     static let long: TimeInterval = 10.0
 }
+
+extension DispatchTimeInterval {
+
+    static let short: DispatchTimeInterval = .seconds(2)
+    static let medium: DispatchTimeInterval = .seconds(5)
+    static let long: DispatchTimeInterval = .seconds(10)
+}

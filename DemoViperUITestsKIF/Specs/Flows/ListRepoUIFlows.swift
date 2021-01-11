@@ -34,8 +34,3 @@ extension KIFTestActor {
         )
     }
 }
-
-struct RepoCellItem {
-    let repoFullName: String
-    let isBookmarked: Bool
-}

@@ -12,6 +12,7 @@ extension Identifier {
 
         case view
         case tableView
+        case cellTextLabel
 
         static var domain: String { "repo.listRepos" }
     }

@@ -22,7 +22,7 @@ final class ListReposUITests: QuickSpec {
 
             beforeEach {
                 setUpTestEnvironment()
-                self.continueAfterFailure = true
+                self.setUpSpec()
             }
 
             it("open the list repo screen successfully") {
@@ -42,13 +42,13 @@ final class ListReposUITests: QuickSpec {
                 }
 
                 it("navigate back to the list repos screen and verify the repo item is not bookmarked") {
-                    tester.tapRepoCell(at: 0)
+                    tester.tapRepoCell(at: 1)
                     tester.tapBackButton(onScreen: DetailRepo.view.identifier)
 
                     let view = tester.waitForView(withAccessibilityLabel: ListRepos.view.identifier)
                      expect(view).notTo(beNil())
 
-                    let repoCellItem = tester.getRepoCellItem(at: 0)
+                    let repoCellItem = tester.getRepoCellItem(at: 1)
                     expect(repoCellItem?.repoFullName) != ""
                     expect(repoCellItem?.isBookmarked) == false
                 }
@@ -57,7 +57,7 @@ final class ListReposUITests: QuickSpec {
             context("a repo is added to bookmark") {
 
                 it("verify initial data of a repo and open the detail repo screen") {
-                    let repoCellItem = tester.tapRepoCell(at: 0)
+                    let repoCellItem = tester.tapRepoCell(at: 2)
                     expect(repoCellItem?.repoFullName) != ""
                     expect(repoCellItem?.isBookmarked) == false
 
@@ -66,14 +66,14 @@ final class ListReposUITests: QuickSpec {
                 }
 
                 it("navigate back to the list repos screen and verify the repo item is bookmarked") {
-                    tester.tapRepoCell(at: 0)
+                    tester.tapRepoCell(at: 3)
                     tester.tapBookmarkButton()
                     tester.tapBackButton(onScreen: DetailRepo.view.identifier)
 
                     let view = tester.waitForView(withAccessibilityLabel: ListRepos.view.identifier)
                      expect(view).notTo(beNil())
 
-                    let repoCellItem = tester.getRepoCellItem(at: 0)
+                    let repoCellItem = tester.getRepoCellItem(at: 3)
                     expect(repoCellItem?.repoFullName) != ""
                     expect(repoCellItem?.isBookmarked) == true
                 }

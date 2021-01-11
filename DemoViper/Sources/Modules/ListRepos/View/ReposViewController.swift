@@ -43,7 +43,7 @@ final class ReposViewController: UIViewController {
 // MARK: - ReposViewInput
 extension ReposViewController: ReposViewInput {
     func configure() {
-        setupUI()
+        setUpUI()
     }
 
     func showEmptyMessage() {
@@ -61,12 +61,12 @@ extension ReposViewController: ReposViewInput {
 
 // MARK: - Setup UI
 extension ReposViewController {
-    private func setupUI() {
-        setupLayouts()
-        setupViews()
+    private func setUpUI() {
+        setUpLayouts()
+        setUpViews()
     }
 
-    private func setupLayouts() {
+    private func setUpLayouts() {
         view.addSubview(tableView)
         view.addSubview(emptyView)
         emptyView.addSubview(emptyLabel)
@@ -76,25 +76,25 @@ extension ReposViewController {
         emptyLabel.snp.makeConstraints { $0.center.equalToSuperview() }
     }
 
-    private func setupViews() {
-        setupNavigationBar()
-        setupTableView()
-        setupEmptyView()
+    private func setUpViews() {
+        setUpNavigationBar()
+        setUpTableView()
+        setUpEmptyView()
         setUpIdentifier()
     }
 
-    private func setupNavigationBar() {
+    private func setUpNavigationBar() {
         navigationItem.title = "viper repos".uppercased()
     }
 
-    private func setupTableView() {
+    private func setUpTableView() {
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: String(describing: UITableViewCell.self))
         tableView.delegate = self
         tableView.dataSource = self
         tableView.isHidden = true
     }
 
-    private func setupEmptyView() {
+    private func setUpEmptyView() {
         emptyLabel.text = "Your data is empy now!!!"
         emptyView.isHidden = false
         emptyView.backgroundColor = .white
@@ -120,7 +120,6 @@ extension ReposViewController: UITableViewDataSource {
         }
         let item = viewItems[indexPath.row]
         cell.textLabel?.text = item.title
-        cell.textLabel?.accessibilityValue = item.title
         if item.didBookmark {
             cell.accessoryType = .checkmark
         } else {

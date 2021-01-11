@@ -35,7 +35,7 @@ final class RepoViewController: UIViewController {
     let authorView = UIView()
     let avatarImageView = UIImageView()
     let authorNameLabel = UILabel()
-    var isEnableBookmark: Bool = true
+    var isEnableBookmark: Bool = false
     
     var output: RepoViewOutput?
 
@@ -48,11 +48,12 @@ final class RepoViewController: UIViewController {
 // MARK: - RepoViewInput
 extension RepoViewController: RepoViewInput {
     func configure() {
-        setupUI()
+        setUpUI()
     }
     
     func showViewItem(_ item: RepoItem) {
         navigationItem.title = item.repoFullName
+        authorView.isUserInteractionEnabled = true
         repoNameLabel.text = item.repoName
         descriptionLabel.text = item.description
         authorViewTitle.text = "@author"
@@ -71,7 +72,7 @@ extension RepoViewController: RepoViewInput {
 
 // MARK: - UI
 extension RepoViewController {
-    private func setupUI() {
+    private func setUpUI() {
         setUpLayouts()
         setUpViews()
         setUpIdentifier()
@@ -137,6 +138,7 @@ extension RepoViewController {
 
         let tap = UITapGestureRecognizer(target: self, action: #selector(didTapOwner))
         authorView.addGestureRecognizer(tap)
+        authorView.isUserInteractionEnabled = false
 
         avatarImageView.layer.cornerRadius = avatarImageView.bounds.height / 2
         avatarImageView.layer.masksToBounds = true

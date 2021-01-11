@@ -22,7 +22,7 @@ final class DetailRepoUISpecs: QuickSpec {
 
             beforeEach {
                 setUpTestEnvironment()
-                self.continueAfterFailure = true
+                self.setUpSpec()
                 tester.waitForView(withAccessibilityLabel: ListRepos.view.identifier)
                 tester.tapRepoCell(at: 0)
             }

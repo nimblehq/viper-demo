@@ -17,6 +17,9 @@ extension KIFTestActor {
         // Because there may be bookmark buttons on different screens.
         // Hence, it is recommended to verify the screen in which the back button is.
         do {
+            let view = tester().waitForView(withAccessibilityLabel: DetailRepo.authorView.identifier)
+            expect(view?.isUserInteractionEnabled).toEventually(beTrue(), timeout: .long)
+
             try tester().tryFindingView(withAccessibilityLabel: Screen.view.identifier)
             tester().waitAndTapView(with: General.bookmarkButton.identifier)
         } catch {
