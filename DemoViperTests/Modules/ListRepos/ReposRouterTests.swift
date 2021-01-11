@@ -39,15 +39,4 @@ final class ReposRouterTests: XCTestCase {
         let navigationController = viewController.navigationController as? SpyNavigationController
         XCTAssertEqual(navigationController?.pushedViewControllers.count, 2)
     }
-
-    func testShowError() {
-        let expectation = XCTestExpectation(description: "Wait for animation of present controller")
-        let error = NetworkError.json
-        router.showError(error)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-            XCTAssertNotNil(self.viewController.presentedViewController)
-            expectation.fulfill()
-        }
-        wait(for: [expectation], timeout: 5.0)
-    }
 }

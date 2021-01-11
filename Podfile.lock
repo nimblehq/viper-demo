@@ -1,20 +1,34 @@
 PODS:
+  - KIF (3.7.12):
+    - KIF/Core (= 3.7.12)
+  - KIF/Core (3.7.12)
+  - Nimble (9.0.0)
+  - Quick (3.0.0)
   - SnapKit (5.0.1)
   - Sourcery (0.16.2)
 
 DEPENDENCIES:
+  - KIF
+  - Nimble
+  - Quick
   - SnapKit
   - Sourcery
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - KIF
+    - Nimble
+    - Quick
     - SnapKit
     - Sourcery
 
 SPEC CHECKSUMS:
+  KIF: c71cc117944d8e6c807bfccbe675060caae79d60
+  Nimble: 3b4ec3fd40f1dc178058e0981107721c615643d8
+  Quick: 6d9559f40647bc4d510103842ef2fdd882d753e2
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   Sourcery: 3f406d227efd179773b3c3599ebd1700d1a6013c
 
-PODFILE CHECKSUM: 16776e48da08d9ece2c727598c1a903e9e5555b6
+PODFILE CHECKSUM: 06e9b026bae6f79e48ffe2f7e5d31c6b01f1efc1
 
 COCOAPODS: 1.7.5

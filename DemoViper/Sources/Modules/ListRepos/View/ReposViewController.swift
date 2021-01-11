@@ -80,6 +80,7 @@ extension ReposViewController {
         setupNavigationBar()
         setupTableView()
         setupEmptyView()
+        setUpIdentifier()
     }
 
     private func setupNavigationBar() {
@@ -98,6 +99,13 @@ extension ReposViewController {
         emptyView.isHidden = false
         emptyView.backgroundColor = .white
     }
+
+    private func setUpIdentifier() {
+        setIdentifiersForViews(with: [
+            ListRepos.view.identifier: view,
+            ListRepos.tableView.identifier: tableView
+        ])
+    }
 }
 
 // MARK: - UITableViewDataSource
@@ -112,6 +120,7 @@ extension ReposViewController: UITableViewDataSource {
         }
         let item = viewItems[indexPath.row]
         cell.textLabel?.text = item.title
+        cell.textLabel?.accessibilityValue = item.title
         if item.didBookmark {
             cell.accessoryType = .checkmark
         } else {

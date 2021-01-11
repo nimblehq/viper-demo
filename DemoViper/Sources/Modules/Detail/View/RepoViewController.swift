@@ -26,6 +26,8 @@ protocol RepoViewOutput: AnyObject {
 final class RepoViewController: UIViewController {
 
     // MARK: - Outlets
+    var backButton: UIBarButtonItem?
+    var bookmarkButton: UIBarButtonItem?
     let repoNameLabel = UILabel()
     let descriptionLabel = UILabel()
 
@@ -72,6 +74,7 @@ extension RepoViewController {
     private func setupUI() {
         setUpLayouts()
         setUpViews()
+        setUpIdentifier()
     }
 
     private func setUpLayouts() {
@@ -118,7 +121,12 @@ extension RepoViewController {
     private func setUpViews() {
         view.backgroundColor = .white
 
+        let backButton = UIBarButtonItem(title: nil, style: .plain, target: nil, action: nil)
+        self.backButton = backButton
+        navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
+
         let bookmarkButton = UIBarButtonItem(barButtonSystemItem: .bookmarks, target: self, action: #selector(didTapBookmark))
+        self.bookmarkButton = bookmarkButton
         navigationItem.rightBarButtonItem = bookmarkButton
         navigationItem.rightBarButtonItem?.isEnabled = isEnableBookmark
 
@@ -132,6 +140,20 @@ extension RepoViewController {
 
         avatarImageView.layer.cornerRadius = avatarImageView.bounds.height / 2
         avatarImageView.layer.masksToBounds = true
+    }
+
+    private func setUpIdentifier() {
+        setIdentifiersForViews(with: [
+            General.backButton.identifier: backButton,
+            General.bookmarkButton.identifier: bookmarkButton,
+            DetailRepo.view.identifier: view,
+            DetailRepo.repoNameLabel.identifier: repoNameLabel,
+            DetailRepo.descriptionLabel.identifier: descriptionLabel,
+            DetailRepo.authorView.identifier: authorView,
+            DetailRepo.authorViewTitle.identifier: authorViewTitle,
+            DetailRepo.authorNameLabel.identifier: authorNameLabel,
+            DetailRepo.avatarImageView.identifier: avatarImageView
+        ])
     }
 }
 
