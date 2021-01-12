@@ -13,4 +13,10 @@ final class Repo: Codable {
     let name: String
     let fullName: String
     var didBookmark: Bool? = false
+
+    init(id: Int, name: String, fullName: String) {
+        self.id = id
+        self.name = name
+        self.fullName = fullName
+    }
 }

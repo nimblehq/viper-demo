@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct ReposViewItem {
+struct ReposViewItem: Equatable {
     let title: String
     let didBookmark: Bool
 }
