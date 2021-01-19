@@ -43,7 +43,7 @@ extension RepoRouter: RepoRouterInput {
         let controller = SFSafariViewController(url: url)
         viewController?.present(controller, animated: true)
         controller.setIdentifiersForViews(with: [
-            General.webview.identifier : controller.view
+            General.webview.identifier: controller.view
         ])
         controller.view.accessibilityValue = path
     }
