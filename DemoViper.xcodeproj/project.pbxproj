@@ -425,9 +425,9 @@
 		9040C4CB2302838300CB18B1 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				225D531E25B564710050704A /* Helpers */,
 				9040C4CC2302839200CB18B1 /* AppDelegate */,
 				22B8633625AC09460081F3F4 /* Extensions */,
+				225D531E25B564710050704A /* Helpers */,
 				226D5EE125A71FBA00BCEEE2 /* Identifiers */,
 				904CB5B4233348A20017BD6F /* Models */,
 				9040C5132302A64600CB18B1 /* Modules */,
@@ -1157,7 +1157,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F29250264192A6122029D0C9 /* Pods-UITestsKIF.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
@@ -1170,7 +1170,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				OTHER_LDFLAGS = "";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nimblehq.DemoViperUITestsKIF;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
@@ -1185,7 +1185,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4DD74F45239DC908068F8F75 /* Pods-UITestsKIF.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
@@ -1198,7 +1198,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				OTHER_LDFLAGS = "";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nimblehq.DemoViperUITestsKIF;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
@@ -1368,7 +1368,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F98244DC02BC8AD6D28FBE8B /* Pods-UnitTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DemoViperTests/Info.plist;
@@ -1389,7 +1389,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2DBDF1E707F2710BB2C907D0 /* Pods-UnitTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DemoViperTests/Info.plist;
@@ -1410,7 +1410,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 92B40A4E35B5AFBF118C143A /* Pods-UITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DemoViperUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1430,7 +1430,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8CA306897D783D546490F612 /* Pods-UITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DemoViperUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
