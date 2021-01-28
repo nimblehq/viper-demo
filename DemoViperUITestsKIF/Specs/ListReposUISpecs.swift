@@ -21,7 +21,7 @@ final class ListReposUITests: QuickSpec {
         describe("list repos") {
 
             beforeEach {
-                setupTestEnvironment()
+                setUpTestEnvironment()
                 self.continueAfterFailure = true
             }
 

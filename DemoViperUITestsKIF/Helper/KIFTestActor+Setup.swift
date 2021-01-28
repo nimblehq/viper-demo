@@ -10,7 +10,7 @@ import KIF
 
 @testable import DemoViper
 
-func setupTestEnvironment() {
+func setUpTestEnvironment() {
     UIApplication.shared.animationSpeed = 2.0
     KIFTypist.setKeystrokeDelay(.keystrokeDelay)
     KIFTestActor.setDefaultTimeout(.short)
