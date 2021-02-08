@@ -43,7 +43,9 @@ final class ReposViewController: UIViewController {
 // MARK: - ReposViewInput
 extension ReposViewController: ReposViewInput {
     func configure() {
-        setUpUI()
+        setUpLayout()
+        setUpViews()
+        setUpIdentifier()
     }
 
     func showEmptyMessage() {
@@ -61,12 +63,7 @@ extension ReposViewController: ReposViewInput {
 
 // MARK: - Setup UI
 extension ReposViewController {
-    private func setUpUI() {
-        setUpLayouts()
-        setUpViews()
-    }
-
-    private func setUpLayouts() {
+    private func setUpLayout() {
         view.addSubview(tableView)
         view.addSubview(emptyView)
         emptyView.addSubview(emptyLabel)
@@ -80,7 +77,6 @@ extension ReposViewController {
         setUpNavigationBar()
         setUpTableView()
         setUpEmptyView()
-        setUpIdentifier()
     }
 
     private func setUpNavigationBar() {

@@ -48,7 +48,9 @@ final class RepoViewController: UIViewController {
 // MARK: - RepoViewInput
 extension RepoViewController: RepoViewInput {
     func configure() {
-        setUpUI()
+        setUpLayout()
+        setUpViews()
+        setUpIdentifier()
     }
     
     func showViewItem(_ item: RepoItem) {
@@ -72,13 +74,7 @@ extension RepoViewController: RepoViewInput {
 
 // MARK: - UI
 extension RepoViewController {
-    private func setUpUI() {
-        setUpLayouts()
-        setUpViews()
-        setUpIdentifier()
-    }
-
-    private func setUpLayouts() {
+    private func setUpLayout() {
         view.addSubview(repoNameLabel)
         view.addSubview(descriptionLabel)
         view.addSubview(authorViewTitle)

@@ -27,7 +27,7 @@ final class DetailRepoUISpecs: QuickSpec {
                 tester.tapRepoCell(at: 0)
             }
 
-            it("open the detail repo screen successfully") {
+            it("opens the detail repo screen successfully") {
                 let view = tester.waitForView(withAccessibilityLabel: DetailRepo.view.identifier)
                 expect(view).notTo(beNil())
             }

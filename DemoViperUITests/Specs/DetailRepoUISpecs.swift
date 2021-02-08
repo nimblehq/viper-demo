@@ -25,7 +25,7 @@ final class DetailRepoUISpecs: QuickSpec {
                 application.tapRepoCell(at: 0)
             }
 
-            it("open the detail repo screen successfully") {
+            it("opens the detail repo screen successfully") {
                 let view = application.views[DetailRepo.view.identifier].firstMatch
                 expect(view.exists).toEventually(beTrue(), timeout: .medium)
             }
