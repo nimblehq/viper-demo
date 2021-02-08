@@ -7,16 +7,28 @@ target 'DemoViper' do
 
   def testing_pods
     pod 'Sourcery'
+    pod 'Quick'
+    pod 'Nimble'
   end
 
-  target 'DemoViperTests' do
+  def ui_testing_pods
+    pod 'KIF', :configurations => ['Debug']
+  end
+
+  target 'UnitTests' do
     inherit! :search_paths
     testing_pods
   end
 
-  target 'DemoViperUITests' do
+  target 'UITests' do
     inherit! :search_paths
     testing_pods
+  end
+
+  target 'UITestsKIF' do
+    inherit! :search_paths
+    testing_pods
+    ui_testing_pods
   end
 
 end

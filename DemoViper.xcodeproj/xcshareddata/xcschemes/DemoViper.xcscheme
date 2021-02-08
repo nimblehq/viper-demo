@@ -15,8 +15,8 @@
                   <BuildableReference
                      BuildableIdentifier = "primary"
                      BlueprintIdentifier = "9EE85C2922FE955F000FC3D6"
-                     BuildableName = "DemoViperTests.xctest"
-                     BlueprintName = "DemoViperTests"
+                     BuildableName = "UnitTests.xctest"
+                     BlueprintName = "UnitTests"
                      ReferencedContainer = "container:DemoViper.xcodeproj">
                   </BuildableReference>
                </EnvironmentBuildable>
@@ -44,30 +44,8 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      codeCoverageEnabled = "YES"
-      shouldUseLaunchSchemeArgsEnv = "YES">
-      <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9EE85C2922FE955F000FC3D6"
-               BuildableName = "DemoViperTests.xctest"
-               BlueprintName = "DemoViperTests"
-               ReferencedContainer = "container:DemoViper.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9EE85C3422FE955F000FC3D6"
-               BuildableName = "DemoViperUITests.xctest"
-               BlueprintName = "DemoViperUITests"
-               ReferencedContainer = "container:DemoViper.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-      </Testables>
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      codeCoverageEnabled = "YES">
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
@@ -77,8 +55,48 @@
             ReferencedContainer = "container:DemoViper.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
-      <AdditionalOptions>
-      </AdditionalOptions>
+      <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "9EE85C2922FE955F000FC3D6"
+               BuildableName = "UnitTests.xctest"
+               BlueprintName = "UnitTests"
+               ReferencedContainer = "container:DemoViper.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "9EE85C3422FE955F000FC3D6"
+               BuildableName = "UITests.xctest"
+               BlueprintName = "UITests"
+               ReferencedContainer = "container:DemoViper.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "226D5DD225A702F200BCEEE2"
+               BuildableName = "UITestsKIF.xctest"
+               BlueprintName = "UITestsKIF"
+               ReferencedContainer = "container:DemoViper.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "226D5E7B25A71E3500BCEEE2"
+               BuildableName = "SomeTarget.xctest"
+               BlueprintName = "SomeTarget"
+               ReferencedContainer = "container:DemoViper.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+      </Testables>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -100,8 +118,6 @@
             ReferencedContainer = "container:DemoViper.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
