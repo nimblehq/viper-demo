@@ -4,46 +4,17 @@ VIPER is an application of **Clean Architecture** to iOS apps.
 
 The word VIPER is a backronym for `View`, `Interactor`, `Presenter`, `Entity`, and `Router`
 
-With VIPER applied, the code is easy to understand, easier to test, and as a result, also easier to maintain.
+The VIPER provides:
+- **Isolation**. Individual VIPER classes have distinct responsibilities like: routing, business, view logic.
+- **Testability**. Classes must be easy to unit test.
+- **Scalability**. VIPER is an architecture pattern that supports to scale to developers working on the same codebase and dozen VIPER modules.
+- **Tooling**. XCode templates improve developer productivity for teams.
 
-## Main Parts
+## Documentation
 
-- **Entity**: contains basic model objects used by the Interactor.
-- **Interactor**: contains the *business logic* as specified by a use case
-- **Presenter**: contains view logic for *preparing content for display* (as received from the Interactor) and for *reacting to user inputs* (by requesting new data from the Interactor).
-- **Router**: contains *navigation logic* for describing which screens are shown in which order.
-- **View**: displays what it is told to by the Presenter and relays user input back to the Presenter.
+To get started with VIPER, please refer to the [VIPER documentation](https://github.com/nimblehq/viper/wiki)*[WIP]* . This describes VIPER, from its main parts and how we work with VIPER.
 
-![viper-parts](https://github.com/nimblehq/viper/blob/assets/documentation/viper-parts.jpg)
-
-## How We Work With VIPER?
-
-For each module, we have a `Module` class, that will connect all parts of VIPER architecture.
-
-![module](https://github.com/nimblehq/viper/blob/assets/documentation/module-parts.jpg)
-
-### In a Module
-
-![each-module](https://github.com/nimblehq/viper/blob/assets/documentation/each-module.jpg)
-
-### Module connect to another Module or Submodule
-
-![modules](https://github.com/nimblehq/viper/blob/assets/documentation/modules.jpg)
-
-### Using VIPER Template for your Xcode
-
-Our team have create a [VIPER-Template](https://github.com/nimblehq/VIPER-Templates), that helps you create a module with all components you need (Module, Interactor, Presenter, View, Router) and also template for testing.
-
-### Order to implement VIPER's components
-
-After creating a VIPER module, for easy to working with VIPER, I suggest using this order to implement your module.
-
-1. Interactor
-2. Presenter
-3. View
-4. Router
-
-More detail about the code, you can see more in the project `DemoViper`
+To get more hands on with VIPER, we have written a [series of tutorials](https://github.com/nimblehq/viper/wiki)*[WIP]* that run you through the main aspects of VIPER with hands-on examples.
 
 ## Reference
 
@@ -51,7 +22,7 @@ More detail about the code, you can see more in the project `DemoViper`
 
 ## License
 
-This project is Copyright (c) 2014-2019 Nimble. It is free software,
+This project is Copyright (c) 2014-2021 Nimble. It is free software,
 and may be redistributed under the terms specified in the [LICENSE] file.
 
 [LICENSE]: /LICENSE
