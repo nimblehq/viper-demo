@@ -20,15 +20,15 @@ With VIPER applied, the code is easy to understand, easier to test, and as a res
 
 For each module, we have a `Module` class, that will connect all parts of VIPER architecture.
 
-![module](./resources/images/module-parts.jpg)
+![module](https://github.com/nimblehq/viper/blob/assets/documentation/module-parts.jpg)
 
 ### In a Module
 
-![each-module](./resources/images/each-module.jpg)
+![each-module](https://github.com/nimblehq/viper/blob/assets/documentation/each-module.jpg)
 
 ### Module connect to another Module or Submodule
 
-![each-module](./resources/images/modules.jpg)
+![modules](https://github.com/nimblehq/viper/blob/assets/documentation/modules.jpg)
 
 ### Using VIPER Template for your Xcode
 
