@@ -1,10 +1,10 @@
-# VIPER Architecture
+# VIPER
 
 VIPER is an application of **Clean Architecture** to iOS apps. 
 
 The word VIPER is a backronym for `View`, `Interactor`, `Presenter`, `Entity`, and `Router`
 
-The VIPER provides:
+The VIPER in this repository provides:
 - **Isolation**. Individual VIPER classes have distinct responsibilities like: routing, business, view logic.
 - **Testability**. Classes must be easy to unit test.
 - **Scalability**. VIPER is an architecture pattern that supports to scale to developers working on the same codebase and dozen VIPER modules.
@@ -12,9 +12,9 @@ The VIPER provides:
 
 ## Documentation
 
-To get started with VIPER, please refer to the [VIPER documentation](https://github.com/nimblehq/viper/wiki)*[WIP]* . This describes VIPER, from its main parts and how we work with VIPER.
+To get started, please refer to the [our documentation](https://github.com/nimblehq/viper/wiki)*[WIP]*. This describes VIPER, from its main parts and how we work with it.
 
-To get more hands on with VIPER, we have written a [series of tutorials](https://github.com/nimblehq/viper/wiki)*[WIP]* that run you through the main aspects of VIPER with hands-on examples.
+To get more hands on with VIPER, please check the [series of tutorials](https://github.com/nimblehq/viper/wiki)*[WIP]* that run you through the main aspects of VIPER with hands-on examples.
 
 ## Reference
 
