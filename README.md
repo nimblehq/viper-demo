@@ -14,7 +14,7 @@ With VIPER applied, the code is easy to understand, easier to test, and as a res
 - **Router**: contains *navigation logic* for describing which screens are shown in which order.
 - **View**: displays what it is told to by the Presenter and relays user input back to the Presenter.
 
-![viper-parts](./resources/images/viper-parts.jpg)
+![viper-parts](https://github.com/nimblehq/viper/blob/assets/documentation/viper-parts.jpg)
 
 ## How We Work With VIPER?
 
