@@ -16,7 +16,7 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(windowScene: scene)
         if let window = window {
             let module = LoginModule()
-            module.router.show(on: window)
+            module.input.show(on: window)
             window.makeKeyAndVisible()
         }
     }

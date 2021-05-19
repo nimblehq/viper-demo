@@ -6,7 +6,11 @@
 //  
 //
 
+import UIKit
+
 protocol LoginInput: AnyObject {
+
+    func show(on window: UIWindow)
 }
 
 protocol LoginOutput: AnyObject {
