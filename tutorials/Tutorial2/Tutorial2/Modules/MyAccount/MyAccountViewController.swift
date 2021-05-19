@@ -17,7 +17,7 @@ protocol MyAccountViewInput: AnyObject {
 protocol MyAccountViewOutput: AnyObject {
 
     func viewDidLoad()
-    func didTapLogOutButton()
+    func logoutButtonDidTap()
 }
 
 final class MyAccountViewController: UIViewController {
@@ -106,7 +106,7 @@ extension MyAccountViewController {
         logoutButton.tintColor = .white
         logoutButton.setTitle("Log out", for: .normal)
         logoutButton.layer.cornerRadius = 3.0
-        logoutButton.addTarget(self, action: #selector(didTapLogOutButton), for: .touchUpInside)
+        logoutButton.addTarget(self, action: #selector(logoutButtonDidTap), for: .touchUpInside)
     }
 }
 
@@ -114,7 +114,7 @@ extension MyAccountViewController {
 
 extension MyAccountViewController {
 
-    @objc private func didTapLogOutButton() {
-        output?.didTapLogOutButton()
+    @objc private func logoutButtonDidTap() {
+        output?.logoutButtonDidTap()
     }
 }

@@ -13,7 +13,6 @@ final class LoginPresenter {
 
     weak var view: LoginViewInput?
     weak var output: LoginOutput?
-    private var email: String?
 
     init(router: LoginRouterInput, userInteractor: UserInteractor) {
         self.router = router
@@ -30,10 +29,9 @@ extension LoginPresenter: LoginViewOutput {
         view?.prefill(email: "admin@admin.admin", pass: "admin")
     }
 
-    func didTapLoginButton(email: String, pass: String) {
-        self.email = email
+    func loginButtonDidTap(email: String, pass: String) {
         if userInteractor.validate(email: email) && userInteractor.validate(pass: pass) {
-            userInteractor.login(email: email, pass: pass)
+            userInteractor.logIn(email: email, pass: pass)
         } else {
             view?.showAlert(message: "Invalid Inputs")
         }
@@ -44,8 +42,6 @@ extension LoginPresenter: LoginViewOutput {
 extension LoginPresenter: UserInteractorOutput {
 
     func userDidLogin() {
-        userInteractor.isLoggedIn = true
-        userInteractor.savedEmail = email
         router.showHome()
     }
 

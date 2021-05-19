@@ -31,9 +31,8 @@ extension MyAccountPresenter: MyAccountViewOutput {
         }
     }
 
-    func didTapLogOutButton() {
-        userInteractor.isLoggedIn = false
-        userInteractor.savedEmail = nil
+    func logoutButtonDidTap() {
+        userInteractor.logOut()
         router.showLogin()
     }
 }

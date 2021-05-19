@@ -18,7 +18,7 @@ protocol LoginViewInput: AnyObject {
 protocol LoginViewOutput: AnyObject {
 
     func viewDidLoad()
-    func didTapLoginButton(email: String, pass: String)
+    func loginButtonDidTap(email: String, pass: String)
 }
 
 final class LoginViewController: UIViewController {
@@ -100,7 +100,7 @@ extension LoginViewController {
         loginButton.tintColor = .white
         loginButton.setTitle("Log In", for: .normal)
         loginButton.layer.cornerRadius = 3.0
-        loginButton.addTarget(self, action: #selector(didTapLoginButton), for: .touchUpInside)
+        loginButton.addTarget(self, action: #selector(loginButtonDidTap), for: .touchUpInside)
     }
 }
 
@@ -108,9 +108,9 @@ extension LoginViewController {
 
 extension LoginViewController {
 
-    @objc private func didTapLoginButton() {
+    @objc private func loginButtonDidTap() {
         let email = emailField.text ?? ""
         let pass = passField.text ?? ""
-        output?.didTapLoginButton(email: email, pass: pass)
+        output?.loginButtonDidTap(email: email, pass: pass)
     }
 }

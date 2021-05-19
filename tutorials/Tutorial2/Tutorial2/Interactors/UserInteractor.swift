@@ -10,12 +10,13 @@ import Foundation
 
 protocol UserInteractorInput: AnyObject {
 
-    var isLoggedIn: Bool { get set }
-    var savedEmail: String? { get set }
+    var isLoggedIn: Bool { get }
+    var savedEmail: String? { get }
 
     func validate(email: String) -> Bool
     func validate(pass: String) -> Bool
-    func login(email: String, pass: String)
+    func logIn(email: String, pass: String)
+    func logOut()
 }
 
 protocol UserInteractorOutput: AnyObject {
@@ -59,7 +60,6 @@ extension UserInteractor: UserInteractorInput {
 
     func validate(email: String) -> Bool {
         let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
-
         let emailPredicate = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         return emailPredicate.evaluate(with: email)
     }
@@ -68,12 +68,19 @@ extension UserInteractor: UserInteractorInput {
         return !pass.isEmpty
     }
 
-    func login(email: String, pass: String) {
+    func logIn(email: String, pass: String) {
         // just fake login logic
         if email.lowercased() == "admin@admin.admin" && pass.lowercased() == "admin" {
+            isLoggedIn = true
+            savedEmail = email
             output?.userDidLogin()
         } else {
             output?.userDidFailToLogin(message: "Wrong email or password!")
         }
+    }
+
+    func logOut() {
+        isLoggedIn = true
+        savedEmail = nil
     }
 }
