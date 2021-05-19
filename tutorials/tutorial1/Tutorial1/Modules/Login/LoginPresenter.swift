@@ -28,7 +28,7 @@ extension LoginPresenter: LoginViewOutput {
         view?.configure()
     }
 
-    func didTapLoginButton(email: String, pass: String) {
+    func loginButtonDidTap(email: String, pass: String) {
         if userInteractor.validate(email: email) && userInteractor.validate(pass: pass) {
             userInteractor.login(email: email, pass: pass)
         } else {
