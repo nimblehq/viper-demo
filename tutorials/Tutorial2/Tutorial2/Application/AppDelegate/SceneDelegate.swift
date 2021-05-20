@@ -18,10 +18,10 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             let userInteractor = UserInteractor()
             if userInteractor.isLoggedIn {
                 let myAccountModule = MyAccountModule()
-                myAccountModule.router.show(on: window)
+                myAccountModule.input.setInitialModule(on: window)
             } else {
                 let loginModule = LoginModule()
-                loginModule.router.show(on: window)
+                loginModule.input.setInitialModule(on: window)
             }
             window.makeKeyAndVisible()
         }

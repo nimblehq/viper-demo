@@ -64,7 +64,7 @@ extension UserInteractor: UserInteractorInput {
         return emailPredicate.evaluate(with: email)
     }
 
-    func validate(pass: String) -> Bool {
+    func validate(pass: String) -> Bool {    
         return !pass.isEmpty
     }
 
@@ -80,7 +80,8 @@ extension UserInteractor: UserInteractorInput {
     }
 
     func logOut() {
-        isLoggedIn = true
-        savedEmail = nil
+        userDefaults.removeObject(forKey: "UserInteractor.isLoggedIn")
+        userDefaults.removeObject(forKey: "UserInteractor.savedEmail")
+        userDefaults.synchronize()
     }
 }

@@ -6,7 +6,11 @@
 //  
 //
 
+import UIKit
+
 protocol LoginInput: AnyObject {
+
+    func setInitialModule(on window: UIWindow)
 }
 
 protocol LoginOutput: AnyObject {

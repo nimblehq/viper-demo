@@ -6,6 +6,8 @@
 //  
 //
 
+import UIKit
+
 final class LoginPresenter {
 
     let router: LoginRouterInput
@@ -53,4 +55,8 @@ extension LoginPresenter: UserInteractorOutput {
 // MARK: - LoginInput
 
 extension LoginPresenter: LoginInput {
+
+    func setInitialModule(on window: UIWindow) {
+        router.show(on: window)
+    }
 }

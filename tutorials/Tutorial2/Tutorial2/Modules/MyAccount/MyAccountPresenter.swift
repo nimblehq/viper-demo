@@ -6,6 +6,8 @@
 //  
 //
 
+import UIKit
+
 final class MyAccountPresenter {
 
     let router: MyAccountRouterInput
@@ -28,6 +30,8 @@ extension MyAccountPresenter: MyAccountViewOutput {
         view?.configure()
         if let email = userInteractor.savedEmail {
             view?.configureUserView(username: "Admin", email: email)
+        } else {
+            view?.configureUserView(username: "-", email: "-")
         }
     }
 
@@ -40,4 +44,8 @@ extension MyAccountPresenter: MyAccountViewOutput {
 // MARK: - MyAccountInput
 
 extension MyAccountPresenter: MyAccountInput {
+
+    func setInitialModule(on window: UIWindow) {
+        router.show(on: window)
+    }
 }
