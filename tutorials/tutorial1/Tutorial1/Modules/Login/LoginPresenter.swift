@@ -55,7 +55,7 @@ extension LoginPresenter: UserInteractorOutput {
 
 extension LoginPresenter: LoginInput {
 
-    func show(on window: UIWindow) {
+    func setInitialModule(on window: UIWindow) {
         router.show(on: window)
     }
 }

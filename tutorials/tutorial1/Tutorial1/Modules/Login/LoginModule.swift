@@ -10,7 +10,7 @@ import UIKit
 
 protocol LoginInput: AnyObject {
 
-    func show(on window: UIWindow)
+    func setInitialModule(on window: UIWindow)
 }
 
 protocol LoginOutput: AnyObject {
