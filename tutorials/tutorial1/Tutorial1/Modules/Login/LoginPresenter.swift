@@ -31,11 +31,7 @@ extension LoginPresenter: LoginViewOutput {
     }
 
     func loginButtonDidTap(email: String, pass: String) {
-        if userInteractor.validate(email: email) && userInteractor.validate(pass: pass) {
-            userInteractor.login(email: email, pass: pass)
-        } else {
-            view?.showAlert(message: "Invalid Inputs")
-        }
+        userInteractor.login(email: email, pass: pass)
     }
 }
 

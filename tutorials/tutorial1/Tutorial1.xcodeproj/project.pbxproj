@@ -16,6 +16,7 @@
 		904D823226453F980037B9A4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904D822E26453F980037B9A4 /* LoginViewController.swift */; };
 		904D823326453F980037B9A4 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904D822F26453F980037B9A4 /* LoginPresenter.swift */; };
 		904D8235264541490037B9A4 /* UserInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904D8234264541490037B9A4 /* UserInteractor.swift */; };
+		90FF43EF265E92BB006FA549 /* String+Email.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FF43EE265E92BB006FA549 /* String+Email.swift */; };
 		FA0E2E037EE7C7400E9D10E9 /* Pods_Tutorial1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 883C18A6877F9405986C0E10 /* Pods_Tutorial1.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +35,7 @@
 		904D822E26453F980037B9A4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		904D822F26453F980037B9A4 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		904D8234264541490037B9A4 /* UserInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInteractor.swift; sourceTree = "<group>"; };
+		90FF43EE265E92BB006FA549 /* String+Email.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Email.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				904D822426453E930037B9A4 /* Application */,
+				90FF43ED265E92A3006FA549 /* Extensions */,
 				904D822A26453F1C0037B9A4 /* Interactors */,
 				904D822926453F140037B9A4 /* Modules */,
 			);
@@ -154,6 +157,14 @@
 				904D822E26453F980037B9A4 /* LoginViewController.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		90FF43ED265E92A3006FA549 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				90FF43EE265E92BB006FA549 /* String+Email.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		B988DBF153F15E9BCCBE80E4 /* Frameworks */ = {
@@ -284,6 +295,7 @@
 				904D823026453F980037B9A4 /* LoginRouter.swift in Sources */,
 				904D823226453F980037B9A4 /* LoginViewController.swift in Sources */,
 				904D823126453F980037B9A4 /* LoginModule.swift in Sources */,
+				90FF43EF265E92BB006FA549 /* String+Email.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

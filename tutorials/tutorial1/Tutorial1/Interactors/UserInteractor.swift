@@ -10,8 +10,6 @@ import Foundation
 
 protocol UserInteractorInput: AnyObject {
 
-    func validate(email: String) -> Bool
-    func validate(pass: String) -> Bool
     func login(email: String, pass: String)
 }
 
@@ -30,18 +28,11 @@ final class UserInteractor {
 
 extension UserInteractor: UserInteractorInput {
 
-    func validate(email: String) -> Bool {
-        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
-
-        let emailPredicate = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
-        return emailPredicate.evaluate(with: email)
-    }
-
-    func validate(pass: String) -> Bool {
-        return !pass.isEmpty
-    }
-
     func login(email: String, pass: String) {
+        guard email.isEmail && !pass.isEmpty else {
+            output?.userDidFailToLogin(message: "Invalid inputs")
+            return
+        }
         // just fake login logic
         if email.lowercased() == "admin@admin.admin" && pass.lowercased() == "admin" {
             output?.userDidLogin()
