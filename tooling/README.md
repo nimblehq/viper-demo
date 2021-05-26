@@ -1,5 +1,5 @@
 ## VIPER Xcode Templates
 
-We have created Xcode templates to generate all needed VIPER scaffolded classes, making VIPER usage and adoption easier and ready to add business logic.
+Nimble iOS developers have created Xcode templates to generate all needed VIPER scaffolding classes.
 
-For details on installation and usage, please see wiki page [WIP].
+For details, please see [Tooling wiki page](https://github.com/nimblehq/viper-demo/wiki/Tooling)
