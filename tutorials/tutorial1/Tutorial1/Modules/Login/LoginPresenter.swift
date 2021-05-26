@@ -11,14 +11,14 @@ import UIKit
 final class LoginPresenter {
 
     let router: LoginRouterInput
-    let userInteractor: UserInteractor
+    let loginInteractor: LoginInteractor
 
     weak var view: LoginViewInput?
     weak var output: LoginOutput?
 
-    init(router: LoginRouterInput, userInteractor: UserInteractor) {
+    init(router: LoginRouterInput, loginInteractor: LoginInteractor) {
         self.router = router
-        self.userInteractor = userInteractor
+        self.loginInteractor = loginInteractor
     }
 }
 
@@ -31,12 +31,12 @@ extension LoginPresenter: LoginViewOutput {
     }
 
     func loginButtonDidTap(email: String, pass: String) {
-        userInteractor.login(email: email, pass: pass)
+        loginInteractor.login(email: email, pass: pass)
     }
 }
 
-// MARK: - UserInteractorOutput
-extension LoginPresenter: UserInteractorOutput {
+// MARK: - LoginInteractorOutput
+extension LoginPresenter: LoginInteractorOutput {
 
     func userDidLogin() {
         view?.showAlert(message: "Login Successful!")

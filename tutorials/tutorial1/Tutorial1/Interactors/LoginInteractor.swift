@@ -1,5 +1,5 @@
 //
-//  UserInteractor.swift
+//  LoginInteractor.swift
 //  Tutorial1
 //
 //  Created by Su Van Ho on 07/05/2021.
@@ -8,25 +8,25 @@
 
 import Foundation
 
-protocol UserInteractorInput: AnyObject {
+protocol LoginInteractorInput: AnyObject {
 
     func login(email: String, pass: String)
 }
 
-protocol UserInteractorOutput: AnyObject {
+protocol LoginInteractorOutput: AnyObject {
 
     func userDidLogin()
     func userDidFailToLogin(message: String)
 }
 
-final class UserInteractor {
+final class LoginInteractor {
 
-    weak var output: UserInteractorOutput?
+    weak var output: LoginInteractorOutput?
 }
 
-// MARK: - UserInteractorInput
+// MARK: - LoginInteractorInput
 
-extension UserInteractor: UserInteractorInput {
+extension LoginInteractor: LoginInteractorInput {
 
     func login(email: String, pass: String) {
         guard email.isEmail && !pass.isEmpty else {
