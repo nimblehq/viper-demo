@@ -22,7 +22,7 @@ final class LoginModule {
     let presenter: LoginPresenter
     let router: LoginRouter
 
-    let userInteractor: UserInteractor
+    let loginInteractor: LoginInteractor
 
     var output: LoginOutput? {
         get { presenter.output }
@@ -32,11 +32,11 @@ final class LoginModule {
     var input: LoginInput { presenter }
 
     init() {
-        userInteractor = UserInteractor()
+        loginInteractor = LoginInteractor()
 
         view = LoginViewController()
         router = LoginRouter()
-        presenter = LoginPresenter(router: router, userInteractor: userInteractor)
+        presenter = LoginPresenter(router: router, loginInteractor: loginInteractor)
 
         view.output = presenter
 
@@ -44,6 +44,6 @@ final class LoginModule {
 
         router.view = view
 
-        userInteractor.output = presenter
+        loginInteractor.output = presenter
     }
 }
